@@ -11,7 +11,7 @@ PG3B is a hardware circuit and software modules that provide everything from low
 
 Application modules are assembled like building blocks to make the perfect controller for your game. The system is completely open and ready to meet your needs. Example applications under development include XBoxMouse, XBoxKeyboard, XBoxRapidFire, and Machine Vision Targeting. These are standalone applications written in Java or C#.
 
-The Driver layer is similar to the Microsoft XNA 3.0 Game Studio API. Unlike XNA the values are writable because they send GamePad instructions to the XBox 360 game console. The Driver layer is available for Java and C# development environments.
+The Driver layer is similar to the Microsoft XNA 3.0 Game Studio API. Unlike XNA the values are writable because they send Game Pad instructions to the XBox 360 game console. The Driver layer is available for Java and C# development environments.
 
 The Physical layer establishes a communications channel with the PG3B circuit board. This module is managed by the driver layer so you don't need to worry about low level communications details. The Physical layer is available for Java and C# development environments.
 
