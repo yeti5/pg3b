@@ -80,8 +80,8 @@ system_t Configuration;
  */
 static void DoWhileIdle( void )
 {
-//    KB_EventTask( );
-//    MS_EventTask( );
+    KB_EventTask( );
+//  MS_EventTask( );
 }
 
 /*
@@ -275,52 +275,6 @@ static void EnableDataCollection( uint8_t collection )
 
 /*
  ****************************************************************************************************
- * LogByte
- ****************************************************************************************************
- */
-static uint8_t hex4digit( uint8_t data )
-{
-    data &= 0x0F;
-    return data + ( ( data < 10 )? '0' : 'A' - 10 );
-}
-
-uint8_t LogByte( uint8_t prefix, uint8_t data )
-{
-    if( Configuration.datacollection )
-    {
-        usb_serial_putchar( prefix );
-        usb_serial_putchar( ' ' );
-        usb_serial_putchar( hex4digit( data >> 4 ) );
-        usb_serial_putchar( hex4digit( data ) );
-        usb_serial_putchar( '\n' );
-    }
-
-    return data;
-}
-
-/*
- ****************************************************************************************************
- * LogWord
- ****************************************************************************************************
- */
-uint16_t LogWord( uint8_t prefix, uint16_t data )
-{
-    if( Configuration.datacollection )
-    {
-        usb_serial_putchar( prefix );
-        usb_serial_putchar( ' ' );
-        usb_serial_putchar( hex4digit( data >> 12 ) );
-        usb_serial_putchar( hex4digit( data >> 8 ) );
-        usb_serial_putchar( hex4digit( data >> 4 ) );
-        usb_serial_putchar( hex4digit( data ) );
-        usb_serial_putchar( '\n' );
-    }
-
-    return data;
-}
-
-/*
- ****************************************************************************************************
  * WriteEeprom
  ****************************************************************************************************
  */
@@ -373,4 +327,50 @@ static void WriteEeprom( uint8_t page, uint8_t *data )
 
 //    if( crc8 == byte( data + ( sizeof(buffer) << 1 ) ) )
 //        eeprom_write_block( buffer, (void *)( page * sizeof( buffer ) ), sizeof( buffer ) );
+}
+
+/*
+ ****************************************************************************************************
+ * LogByte
+ ****************************************************************************************************
+ */
+static uint8_t hex4digit( uint8_t data )
+{
+    data &= 0x0F;
+    return data + ( ( data < 10 )? '0' : 'A' - 10 );
+}
+
+uint8_t LogByte( uint8_t prefix, uint8_t data )
+{
+    if( Configuration.datacollection )
+    {
+        usb_serial_putchar( prefix );
+        usb_serial_putchar( ' ' );
+        usb_serial_putchar( hex4digit( data >> 4 ) );
+        usb_serial_putchar( hex4digit( data ) );
+        usb_serial_putchar( '\n' );
+    }
+
+    return data;
+}
+
+/*
+ ****************************************************************************************************
+ * LogWord
+ ****************************************************************************************************
+ */
+uint16_t LogWord( uint8_t prefix, uint16_t data )
+{
+    if( Configuration.datacollection )
+    {
+        usb_serial_putchar( prefix );
+        usb_serial_putchar( ' ' );
+        usb_serial_putchar( hex4digit( data >> 12 ) );
+        usb_serial_putchar( hex4digit( data >> 8 ) );
+        usb_serial_putchar( hex4digit( data >> 4 ) );
+        usb_serial_putchar( hex4digit( data ) );
+        usb_serial_putchar( '\n' );
+    }
+
+    return data;
 }
