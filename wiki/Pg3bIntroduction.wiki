@@ -1,0 +1,35 @@
+# The following is a brief software and hardware summary of the PG3B platform
+
+= Introduction =
+
+PG3B is a hardware circuit and several layered software modules that provide everything from low level XBox 360 control to sophisticated applications that integrate and enhance your favorite gaming devices including Arcade, Mouse, Keyboard, and Joystick peripherals.
+
+= Details =
+
+SOFTWARE
+
+Application modules are assembled like building blocks to make the perfect controller for your game. The system is completely open and ready to meet your needs. Example applications under development include XBoxMouse, XBoxKeyboard, XBoxRapidFire, and Machine Vision Targeting.
+
+The Driver layer is similar to the Microsoft XNA 3.0 Game Studio API.Unlike XNA the values are writable because they send GamePad instructions to the XBox 360 game console.
+
+The Physical layer establishes a communications channel with the PG3B circuit board. This module is managed by the driver layer so you don't need to worry about low level communications details.
+
+HARDWARE
+
+PG3B has a surprisingly small number of functional blocks but it allows full control of XBox 360 Wired and Wireless controllers. The core of the system is a complete USB-based micro-controller development system. It has a lot of power packed into a very small footprint! All programming is done via the USB port. No special programmer is needed, only a standard "Mini-B" USB cable and a PC  with a USB port.
+
+The PG3B circuit has an AT90USB646 AVR micro-controller with 64512 bytes of flash memory for your code, 4096 bytes of RAM for program variables, and 2048 bytes of EEPROM to store configuration data. This is small compared to the resources available to a PC but plenty to run the USB port and drivers for up to sixteen input devices.
+
+The core provides 5v from the USB connector to the rest of the circuit. This means the Digital Output from the core is 0v for Off and 5V for On. A voltage divider translates this into the voltage levels required by the XBox 360 Wired Controller; button pressed is translated into 1.8v and button released is 0v. The PG3B circuit has a digital connection to each of the XBox 360 buttons.
+
+There's a PG3B XBox360 Driver running on the core that allows an application to select a button and to make the button state pressed, or released. When a button is pressed the Digital Output for that button is set to "high", so the voltage is raised to 5v. The voltage divider converts the level to 1.8v, as expected by the controller, which causes the XBox 360 controller to think that the physical button is pressed.
+
+Similarly, when a button is released, the Digital Output for that button is set to "low". The voltage for that button is lowered to 0v. The voltage divider passes the 0v signal to the XBox 360 controller which now thinks the physical button is released. The PG3B XBox 360 driver allows control of all fifteen buttons: A, B, X, Y, Up, Down, Left, Right, Left Stick, Right Stick, Left Bumper, Right Bumper, Back, Guide, Stop.
+
+The core is also attached to a Serial Peripheral Interface (SPI) bus and a series of 10K Ohm Digital Potentiometers (POTs). The POTs allow the application software full control of the XBox 360 thumbsticks and triggers. Thumbsticks have an X and Y axis. Each axis has a range of motion. Triggers also have a range of motion. These devices are controlled with a value between 0 and 255. The value is translated into a voltage from 0v to 1.6v and is divided into 256 steps.
+
+Its easier to think about the range of motion by skewing the values. For the thumbsticks, you can think of the value as -127 to +128 with 0 as idle. Triggers are usually operated with values from 0 to 128 where 0 is not pressed and 128 is fully pressed.
+
+The PG3B XBox360 Driver running on the core allows an application to select a thumbstick or trigger and set its value. The value is transmitted over the SPI Bus to a Digital POT. The Digital POT translates the value into a voltage between 0v to 1.6v. The voltage causes the XBox 360 controller to think that the thumbstick has been deflected left / right on the X axis, or up / down on the Y axis. The amount of deflection is proportional to the value from -127 to +128 with 0 as idle or "no deflection". Triggers are pulled proportional to the value from 0 to 128 where 0 is not pulled.
+
+The PG3B XBox 360 driver allows control of all six analog controls including Left Stick X & Y, Right Stick X & Y, Left Trigger, and Right Trigger.
