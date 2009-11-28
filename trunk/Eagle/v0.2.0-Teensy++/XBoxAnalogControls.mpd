@@ -1,0 +1,21 @@
+//MPD-File
+#ifndef(pack_K) #declare global_pack_K=yes; object {CON_PS2_001()translate<0,0,0> rotate<0,90.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<78.232000,0.000000,31.750000>}#end		//PS2 K MINI-DIN6PTH MINI-DIN6
+#ifndef(pack_LED1) #declare global_pack_LED1=yes; object {DIODE_DIS_LED_3MM(Red,0.500000,0.000000,)translate<0,0,0> rotate<0,0.000000,0>rotate<0,-180.000000,0> rotate<0,0,0> translate<61.087000,0.000000,2.286000>}#end		//Diskrete 3MM LED LED1  LED3MM
+#ifndef(pack_M) #declare global_pack_M=yes; object {CON_PS2_001()translate<0,0,0> rotate<0,90.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<78.232000,0.000000,5.588000>}#end		//PS2 M MINI-DIN6PTH MINI-DIN6
+#ifndef(pack_P1) #declare global_pack_P1=yes; object {CAP_DIS_CERAMIC_TC26V("",)translate<1.27,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<1.397000,0.000000,13.589000>}#end		//ceramic disc capacitator P1  CAP-PTH-SMALL
+#ifndef(pack_P2) #declare global_pack_P2=yes; object {CAP_DIS_CERAMIC_TC26V("",)translate<1.27,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<22.860000,0.000000,13.716000>}#end		//ceramic disc capacitator P2  CAP-PTH-SMALL
+#ifndef(pack_P3) #declare global_pack_P3=yes; object {CAP_DIS_CERAMIC_TC26V("",)translate<1.27,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<44.450000,0.000000,13.716000>}#end		//ceramic disc capacitator P3  CAP-PTH-SMALL
+#ifndef(pack_P4) #declare global_pack_P4=yes; object {CAP_DIS_CERAMIC_TC26V("",)translate<1.27,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<59.817000,0.000000,19.431000>}#end		//ceramic disc capacitator P4  CAP-PTH-SMALL
+#ifndef(pack_P5) #declare global_pack_P5=yes; object {CAP_DIS_CERAMIC_TC26V("",)translate<1.27,0,0> rotate<0,0.000000,0>rotate<0,-270.000000,0> rotate<0,0,0> translate<57.023000,0.000000,19.431000>}#end		//ceramic disc capacitator P5  CAP-PTH-SMALL
+#ifndef(pack_RN1) #declare global_pack_RN1=yes; object {IC_DIS_DIP16("4.7K","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<10.795000,0.000000,26.797000>translate<0,3.000000,0> }#end		//DIP16 RN1 4.7K DIL16
+#ifndef(pack_RN1) object{SOCKET_DIP16()rotate<0,0.000000,0> rotate<0,0,0> translate<10.795000,0.000000,26.797000>}#end					//IC-Sockel 16Pin RN1 4.7K
+#ifndef(pack_RN2) #declare global_pack_RN2=yes; object {IC_DIS_DIP16("4.7K","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<53.975000,0.000000,26.797000>translate<0,3.000000,0> }#end		//DIP16 RN2 4.7K DIL16
+#ifndef(pack_RN2) object{SOCKET_DIP16()rotate<0,0.000000,0> rotate<0,0,0> translate<53.975000,0.000000,26.797000>}#end					//IC-Sockel 16Pin RN2 4.7K
+#ifndef(pack_RN3) #declare global_pack_RN3=yes; object {IC_DIS_DIP16("2.7K","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<32.385000,0.000000,26.797000>translate<0,3.000000,0> }#end		//DIP16 RN3 2.7K DIL16
+#ifndef(pack_RN3) object{SOCKET_DIP16()rotate<0,0.000000,0> rotate<0,0,0> translate<32.385000,0.000000,26.797000>}#end					//IC-Sockel 16Pin RN3 2.7K
+#ifndef(pack_U1) #declare global_pack_U1=yes; object {IC_DIS_DIP14("MCP42010","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<54.610000,0.000000,9.906000>translate<0,3.000000,0> }#end		//DIP14 U1 MCP42010 DIL14
+#ifndef(pack_U1) object{SOCKET_DIP14()rotate<0,0.000000,0> rotate<0,0,0> translate<54.610000,0.000000,9.906000>}#end					//IC-Sockel 14Pin U1 MCP42010
+#ifndef(pack_U2) #declare global_pack_U2=yes; object {IC_DIS_DIP14("MCP42010","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<33.020000,0.000000,9.906000>translate<0,3.000000,0> }#end		//DIP14 U2 MCP42010 DIL14
+#ifndef(pack_U2) object{SOCKET_DIP14()rotate<0,0.000000,0> rotate<0,0,0> translate<33.020000,0.000000,9.906000>}#end					//IC-Sockel 14Pin U2 MCP42010
+#ifndef(pack_U3) #declare global_pack_U3=yes; object {IC_DIS_DIP14("MCP42010","",)translate<0,0,0> rotate<0,0.000000,0>rotate<0,0.000000,0> rotate<0,0,0> translate<11.430000,0.000000,9.906000>translate<0,3.000000,0> }#end		//DIP14 U3 MCP42010 DIL14
+#ifndef(pack_U3) object{SOCKET_DIP14()rotate<0,0.000000,0> rotate<0,0,0> translate<11.430000,0.000000,9.906000>}#end					//IC-Sockel 14Pin U3 MCP42010
