@@ -1,0 +1,131 @@
+$Rev: 127 $
+$Author: rburke $
+$Date: 2009-08-24 00:06:03 -0400 (Mon, 24 Aug 2009) $
+
+MouseDriver`EventFilter
+|	
+|	    Count : 00000E10
+|	Last Time : 0000012D
+|	      Min : 0000000F
+|	      Max : 0000017A
+|	    Total : 00000000000526C5
+|
+>--	MouseDriver`EventDispatcher
+	|
+	|		Count : 000002AB
+	|	Last Time : 00000031
+	|		  Min : 0000002D
+	|		  Max : 00000163
+	|		Total : 000000000003466A
+	|
+	>--	MouseDriver`Vector X
+	|
+	|		Count : 00000469
+	|	Last Time : 00000006
+	|		  Min : 00000005
+	|		  Max : 0000000B
+	|		Total : 0000000000001917
+	|
+	>--	MouseDriver`AbsoluteValue
+	|
+	|		Count : 000007AC
+	|	Last Time : 00000005
+	|		  Min : 00000004
+	|		  Max : 0000000B
+	|		Total : 0000000000002766
+	|
+	>--	MouseDriver`VectorY
+	|
+	|		Count : 000003AA
+	|	Last Time : 00000006
+	|		  Min : 00000005
+	|		  Max : 0000000C
+	|		Total : 0000000000001599
+	|
+	>--	MouseDriver`AbsoluteValue
+	|
+	|		Count : 000007AC
+	|	Last Time : 00000005
+	|		  Min : 00000004
+	|		  Max : 0000000B
+	|		Total : 0000000000002766
+	|
+	>--	MouseDriver`InverseSlope
+	|
+	|		Count : 00000669
+	|	Last Time : 0000001F
+	|		  Min : 0000001F
+	|		  Max : 0000002B
+	|		Total : 000000000000CDB2
+	|
+	>--	MouseDriver`FindScale
+	|
+	|		Count : 00000474
+	|	Last Time : 0000000B
+	|		  Min : 00000007
+	|		  Max : 00000016
+	|		Total : 0000000000003D14
+	|
+	>--	MouseDriver`VectorW
+	|
+	|		Count : 00000296
+	|	Last Time : 00000043
+	|		  Min : 0000003F
+	|		  Max : 00000050
+	|		Total : 000000000000B7EB
+	|
+	>--	MouseDriver`Average
+	|
+	|		Count : 00000504
+	|	Last Time : 0000000D
+	|		  Min : 0000000D
+	|		  Max : 00000013
+	|		Total : 00000000000041B0
+	|
+	>--	EventAction.c`EVA_InvokeEventAction
+	|		
+	|		Count : 00000446
+	|	Last Time : 0000002F
+	|		  Min : 0000002B
+	|		  Max : 00000035
+	|		Total : 000000000000C1A3
+	|
+	>--	EventAction.c`EVA_LookupEvent
+	|
+	|		Count : 00000A22
+	|	Last Time : 0000000C
+	|		  Min : 00000009
+	|		  Max : 00000012
+	|		Total : 0000000000006B81
+	|
+	>--	EventAction.c`EVA_InvokeAction
+		|
+		|		Count : 00000AE1
+		|	Last Time : 00000007
+		|		  Min : 00000007
+		|		  Max : 00000035
+		|		Total : 0000000000019B3C
+		|
+		>--	EventAction.c`EVA_CalibrateWiper
+		|
+		|		Count : 0000087A
+		|	Last Time : 00000009
+		|		  Min : 00000008
+		|		  Max : 0000000F
+		|		Total : 0000000000004978
+		|
+		>--	SerialPeripheral.c`SPI_TransferBytes
+			|
+			|		Count : 00000500
+			|	Last Time : 0000001C
+			|		  Min : 0000001B
+			|		  Max : 00000026
+			|		Total : 00000000000088D3
+			|
+			>-- SerialPeripheral.c`SPI_TransferBits
+				|
+				|		Count : 000009E0
+				|	Last Time : 00000009
+				|		  Min : 00000008
+				|		  Max : 00000018
+				|		Total : 00000000000056CF
