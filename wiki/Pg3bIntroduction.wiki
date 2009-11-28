@@ -41,7 +41,6 @@ This example shows squeezing the Left Trigger rapidly ten times in a row.
 
 {{{
 {
-  gamepadController = new PG3B.Interface.GamepadController(playerIndex);
   xboxController = new PG3B.Interface.XBoxController(portName);
  
   for ( i = 0; i < 10; i++)
