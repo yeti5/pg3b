@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Rev: 224 $ -->
+<!-- $Author: rburke $ -->
+<!-- $LastChangedDate: 2009-11-27 01:34:22 -0500 (Fri, 27 Nov 2009) $ -->
+<Configuration>
+  <XBoxController port="COM10" model="WiredCommonLine" />
+  <GamepadController player="1" />
+</Configuration>

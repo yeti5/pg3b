@@ -1,0 +1,2371 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- $Rev: 200 $ -->
+<!-- $Author: rburke $ -->
+<!-- $LastChangedDate: 2009-11-16 21:24:01 -0500 (Mon, 16 Nov 2009) $ -->
+<EvaDataSet xmlns="http://tempuri.org/EvaDataSet.xsd">
+  <Device>
+    <DeviceEnum>0</DeviceEnum>
+    <DeviceCode>0</DeviceCode>
+    <DeviceName>Null</DeviceName>
+    <DeviceFullName>Null</DeviceFullName>
+  </Device>
+  <Device>
+    <DeviceEnum>1</DeviceEnum>
+    <DeviceCode>4096</DeviceCode>
+    <DeviceName>Keyboard</DeviceName>
+    <DeviceFullName>Keyboard</DeviceFullName>
+    <EventTrigger>
+      <DeviceCode>4096</DeviceCode>
+      <TriggerEnum>0</TriggerEnum>
+      <TriggerCode>4096</TriggerCode>
+      <TriggerName>KeyPressed</TriggerName>
+      <TriggerFullName>Keyboard &gt; KeyPressed</TriggerFullName>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>28</ValueEnum>
+        <ValueCode>4124</ValueCode>
+        <ValueName>AKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; AKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>50</ValueEnum>
+        <ValueCode>4146</ValueCode>
+        <ValueName>BKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; BKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>33</ValueEnum>
+        <ValueCode>4129</ValueCode>
+        <ValueName>CKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; CKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>35</ValueEnum>
+        <ValueCode>4131</ValueCode>
+        <ValueName>DKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; DKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>36</ValueEnum>
+        <ValueCode>4132</ValueCode>
+        <ValueName>EKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; EKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>43</ValueEnum>
+        <ValueCode>4139</ValueCode>
+        <ValueName>FKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; FKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>52</ValueEnum>
+        <ValueCode>4148</ValueCode>
+        <ValueName>GKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; GKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>51</ValueEnum>
+        <ValueCode>4147</ValueCode>
+        <ValueName>HKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; HKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>67</ValueEnum>
+        <ValueCode>4163</ValueCode>
+        <ValueName>IKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; IKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>59</ValueEnum>
+        <ValueCode>4155</ValueCode>
+        <ValueName>JKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; JKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>66</ValueEnum>
+        <ValueCode>4162</ValueCode>
+        <ValueName>KKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; KKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>75</ValueEnum>
+        <ValueCode>4171</ValueCode>
+        <ValueName>LKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; LKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>58</ValueEnum>
+        <ValueCode>4154</ValueCode>
+        <ValueName>MKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; MKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>49</ValueEnum>
+        <ValueCode>4145</ValueCode>
+        <ValueName>NKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>68</ValueEnum>
+        <ValueCode>4164</ValueCode>
+        <ValueName>OKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; OKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>77</ValueEnum>
+        <ValueCode>4173</ValueCode>
+        <ValueName>PKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; PKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>21</ValueEnum>
+        <ValueCode>4117</ValueCode>
+        <ValueName>QKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; QKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>45</ValueEnum>
+        <ValueCode>4141</ValueCode>
+        <ValueName>RKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; RKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>27</ValueEnum>
+        <ValueCode>4123</ValueCode>
+        <ValueName>SKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; SKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>44</ValueEnum>
+        <ValueCode>4140</ValueCode>
+        <ValueName>TKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; TKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>60</ValueEnum>
+        <ValueCode>4156</ValueCode>
+        <ValueName>UKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; UKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>42</ValueEnum>
+        <ValueCode>4138</ValueCode>
+        <ValueName>VKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; VKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>29</ValueEnum>
+        <ValueCode>4125</ValueCode>
+        <ValueName>WKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; WKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>34</ValueEnum>
+        <ValueCode>4130</ValueCode>
+        <ValueName>XKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; XKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>53</ValueEnum>
+        <ValueCode>4149</ValueCode>
+        <ValueName>YKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; YKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>26</ValueEnum>
+        <ValueCode>4122</ValueCode>
+        <ValueName>ZKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; ZKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>69</ValueEnum>
+        <ValueCode>4165</ValueCode>
+        <ValueName>D0Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D0Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>22</ValueEnum>
+        <ValueCode>4118</ValueCode>
+        <ValueName>D1Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>30</ValueEnum>
+        <ValueCode>4126</ValueCode>
+        <ValueName>D2Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>38</ValueEnum>
+        <ValueCode>4134</ValueCode>
+        <ValueName>D3Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D3Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>37</ValueEnum>
+        <ValueCode>4133</ValueCode>
+        <ValueName>D4Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D4Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>46</ValueEnum>
+        <ValueCode>4142</ValueCode>
+        <ValueName>D5Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D5Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>54</ValueEnum>
+        <ValueCode>4150</ValueCode>
+        <ValueName>D6Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D6Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>61</ValueEnum>
+        <ValueCode>4157</ValueCode>
+        <ValueName>D7Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D7Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>62</ValueEnum>
+        <ValueCode>4158</ValueCode>
+        <ValueName>D8Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D8Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>70</ValueEnum>
+        <ValueCode>4166</ValueCode>
+        <ValueName>D9Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; D9Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>14</ValueEnum>
+        <ValueCode>4110</ValueCode>
+        <ValueName>TildeKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; TildeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>78</ValueEnum>
+        <ValueCode>4174</ValueCode>
+        <ValueName>MinusKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; MinusKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>85</ValueEnum>
+        <ValueCode>4181</ValueCode>
+        <ValueName>PlusKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; PlusKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>93</ValueEnum>
+        <ValueCode>4189</ValueCode>
+        <ValueName>PipeKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; PipeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>102</ValueEnum>
+        <ValueCode>4198</ValueCode>
+        <ValueName>BackKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; BackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>41</ValueEnum>
+        <ValueCode>4137</ValueCode>
+        <ValueName>SpaceKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; SpaceKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>13</ValueEnum>
+        <ValueCode>4109</ValueCode>
+        <ValueName>TabKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; TabKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>88</ValueEnum>
+        <ValueCode>4184</ValueCode>
+        <ValueName>CapsLockKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; CapsLockKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>18</ValueEnum>
+        <ValueCode>4114</ValueCode>
+        <ValueName>LeftShiftKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; LeftShiftKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>20</ValueEnum>
+        <ValueCode>4116</ValueCode>
+        <ValueName>LeftControlKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; LeftControlKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>17</ValueEnum>
+        <ValueCode>4113</ValueCode>
+        <ValueName>LeftAltKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; LeftAltKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>89</ValueEnum>
+        <ValueCode>4185</ValueCode>
+        <ValueName>RightShiftKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; RightShiftKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>90</ValueEnum>
+        <ValueCode>4186</ValueCode>
+        <ValueName>EnterKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; EnterKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>118</ValueEnum>
+        <ValueCode>4214</ValueCode>
+        <ValueName>EscapeKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; EscapeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>5</ValueEnum>
+        <ValueCode>4101</ValueCode>
+        <ValueName>F1Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>6</ValueEnum>
+        <ValueCode>4102</ValueCode>
+        <ValueName>F2Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>4</ValueEnum>
+        <ValueCode>4100</ValueCode>
+        <ValueName>F3Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F3Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>12</ValueEnum>
+        <ValueCode>4108</ValueCode>
+        <ValueName>F4Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F4Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>4099</ValueCode>
+        <ValueName>F5Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F5Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>11</ValueEnum>
+        <ValueCode>4107</ValueCode>
+        <ValueName>F6Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F6Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>131</ValueEnum>
+        <ValueCode>4227</ValueCode>
+        <ValueName>F7Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F7Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>10</ValueEnum>
+        <ValueCode>4106</ValueCode>
+        <ValueName>F8Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F8Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>4097</ValueCode>
+        <ValueName>F9Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F9Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>9</ValueEnum>
+        <ValueCode>4105</ValueCode>
+        <ValueName>F10Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F10Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>120</ValueEnum>
+        <ValueCode>4216</ValueCode>
+        <ValueName>F11Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F11Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>7</ValueEnum>
+        <ValueCode>4103</ValueCode>
+        <ValueName>F12Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; F12Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>126</ValueEnum>
+        <ValueCode>4222</ValueCode>
+        <ValueName>ScrollLockKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; ScrollLockKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>84</ValueEnum>
+        <ValueCode>4180</ValueCode>
+        <ValueName>OpenBracketKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; OpenBracketKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>119</ValueEnum>
+        <ValueCode>4215</ValueCode>
+        <ValueName>NumLockKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumLockKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>124</ValueEnum>
+        <ValueCode>4220</ValueCode>
+        <ValueName>MultiplyKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; MultiplyKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>123</ValueEnum>
+        <ValueCode>4219</ValueCode>
+        <ValueName>SubtractKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; SubtractKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>121</ValueEnum>
+        <ValueCode>4217</ValueCode>
+        <ValueName>AddKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; AddKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>113</ValueEnum>
+        <ValueCode>4209</ValueCode>
+        <ValueName>DecimalKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; DecimalKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>112</ValueEnum>
+        <ValueCode>4208</ValueCode>
+        <ValueName>NumPad0Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad0Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>105</ValueEnum>
+        <ValueCode>4201</ValueCode>
+        <ValueName>NumPad1Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>114</ValueEnum>
+        <ValueCode>4210</ValueCode>
+        <ValueName>NumPad2Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>122</ValueEnum>
+        <ValueCode>4218</ValueCode>
+        <ValueName>NumPad3Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad3Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>107</ValueEnum>
+        <ValueCode>4203</ValueCode>
+        <ValueName>NumPad4Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad4Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>115</ValueEnum>
+        <ValueCode>4211</ValueCode>
+        <ValueName>NumPad5Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad5Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>116</ValueEnum>
+        <ValueCode>4212</ValueCode>
+        <ValueName>NumPad6Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad6Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>108</ValueEnum>
+        <ValueCode>4204</ValueCode>
+        <ValueName>NumPad7Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad7Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>117</ValueEnum>
+        <ValueCode>4213</ValueCode>
+        <ValueName>NumPad8Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad8Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>125</ValueEnum>
+        <ValueCode>4221</ValueCode>
+        <ValueName>NumPad9Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; NumPad9Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>91</ValueEnum>
+        <ValueCode>4187</ValueCode>
+        <ValueName>CloseBracketKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; CloseBracketKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>76</ValueEnum>
+        <ValueCode>4172</ValueCode>
+        <ValueName>SemicolonKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; SemicolonKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>82</ValueEnum>
+        <ValueCode>4178</ValueCode>
+        <ValueName>QuoteKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; QuoteKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>65</ValueEnum>
+        <ValueCode>4161</ValueCode>
+        <ValueName>CommaKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; CommaKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4096</TriggerCode>
+        <ValueEnum>73</ValueEnum>
+        <ValueCode>4169</ValueCode>
+        <ValueName>PeriodKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyPressed &gt; PeriodKey</ValueFullName>
+      </EventValue>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>4096</DeviceCode>
+      <TriggerEnum>1</TriggerEnum>
+      <TriggerCode>4352</TriggerCode>
+      <TriggerName>KeyReleased</TriggerName>
+      <TriggerFullName>Keyboard &gt; KeyReleased</TriggerFullName>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>28</ValueEnum>
+        <ValueCode>4380</ValueCode>
+        <ValueName>AKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; AKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>50</ValueEnum>
+        <ValueCode>4402</ValueCode>
+        <ValueName>BKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; BKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>33</ValueEnum>
+        <ValueCode>4385</ValueCode>
+        <ValueName>CKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; CKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>35</ValueEnum>
+        <ValueCode>4387</ValueCode>
+        <ValueName>DKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; DKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>36</ValueEnum>
+        <ValueCode>4388</ValueCode>
+        <ValueName>EKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; EKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>43</ValueEnum>
+        <ValueCode>4395</ValueCode>
+        <ValueName>FKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; FKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>52</ValueEnum>
+        <ValueCode>4404</ValueCode>
+        <ValueName>GKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; GKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>51</ValueEnum>
+        <ValueCode>4403</ValueCode>
+        <ValueName>HKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; HKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>67</ValueEnum>
+        <ValueCode>4419</ValueCode>
+        <ValueName>IKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; IKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>59</ValueEnum>
+        <ValueCode>4411</ValueCode>
+        <ValueName>JKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; JKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>66</ValueEnum>
+        <ValueCode>4418</ValueCode>
+        <ValueName>KKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; KKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>75</ValueEnum>
+        <ValueCode>4427</ValueCode>
+        <ValueName>LKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; LKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>58</ValueEnum>
+        <ValueCode>4410</ValueCode>
+        <ValueName>MKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; MKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>49</ValueEnum>
+        <ValueCode>4401</ValueCode>
+        <ValueName>NKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>68</ValueEnum>
+        <ValueCode>4420</ValueCode>
+        <ValueName>OKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; OKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>77</ValueEnum>
+        <ValueCode>4429</ValueCode>
+        <ValueName>PKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; PKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>21</ValueEnum>
+        <ValueCode>4373</ValueCode>
+        <ValueName>QKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; QKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>45</ValueEnum>
+        <ValueCode>4397</ValueCode>
+        <ValueName>RKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; RKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>27</ValueEnum>
+        <ValueCode>4379</ValueCode>
+        <ValueName>SKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; SKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>44</ValueEnum>
+        <ValueCode>4396</ValueCode>
+        <ValueName>TKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; TKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>60</ValueEnum>
+        <ValueCode>4412</ValueCode>
+        <ValueName>UKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; UKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>42</ValueEnum>
+        <ValueCode>4394</ValueCode>
+        <ValueName>VKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; VKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>29</ValueEnum>
+        <ValueCode>4381</ValueCode>
+        <ValueName>WKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; WKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>34</ValueEnum>
+        <ValueCode>4386</ValueCode>
+        <ValueName>XKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; XKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>53</ValueEnum>
+        <ValueCode>4405</ValueCode>
+        <ValueName>YKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; YKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>26</ValueEnum>
+        <ValueCode>4378</ValueCode>
+        <ValueName>ZKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; ZKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>69</ValueEnum>
+        <ValueCode>4421</ValueCode>
+        <ValueName>D0Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D0Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>22</ValueEnum>
+        <ValueCode>4374</ValueCode>
+        <ValueName>D1Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>30</ValueEnum>
+        <ValueCode>4382</ValueCode>
+        <ValueName>D2Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>38</ValueEnum>
+        <ValueCode>4390</ValueCode>
+        <ValueName>D3Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D3Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>37</ValueEnum>
+        <ValueCode>4389</ValueCode>
+        <ValueName>D4Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D4Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>46</ValueEnum>
+        <ValueCode>4398</ValueCode>
+        <ValueName>D5Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D5Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>54</ValueEnum>
+        <ValueCode>4406</ValueCode>
+        <ValueName>D6Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D6Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>61</ValueEnum>
+        <ValueCode>4413</ValueCode>
+        <ValueName>D7Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D7Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>62</ValueEnum>
+        <ValueCode>4414</ValueCode>
+        <ValueName>D8Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D8Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>70</ValueEnum>
+        <ValueCode>4422</ValueCode>
+        <ValueName>D9Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; D9Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>14</ValueEnum>
+        <ValueCode>4366</ValueCode>
+        <ValueName>TildeKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; TildeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>78</ValueEnum>
+        <ValueCode>4430</ValueCode>
+        <ValueName>MinusKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; MinusKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>85</ValueEnum>
+        <ValueCode>4437</ValueCode>
+        <ValueName>PlusKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; PlusKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>93</ValueEnum>
+        <ValueCode>4445</ValueCode>
+        <ValueName>PipeKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; PipeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>102</ValueEnum>
+        <ValueCode>4454</ValueCode>
+        <ValueName>BackKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; BackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>41</ValueEnum>
+        <ValueCode>4393</ValueCode>
+        <ValueName>SpaceKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; SpaceKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>13</ValueEnum>
+        <ValueCode>4365</ValueCode>
+        <ValueName>TabKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; TabKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>88</ValueEnum>
+        <ValueCode>4440</ValueCode>
+        <ValueName>CapsLockKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; CapsLockKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>18</ValueEnum>
+        <ValueCode>4370</ValueCode>
+        <ValueName>LeftShiftKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; LeftShiftKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>20</ValueEnum>
+        <ValueCode>4372</ValueCode>
+        <ValueName>LeftControlKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; LeftControlKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>17</ValueEnum>
+        <ValueCode>4369</ValueCode>
+        <ValueName>LeftAltKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; LeftAltKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>89</ValueEnum>
+        <ValueCode>4441</ValueCode>
+        <ValueName>RightShiftKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; RightShiftKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>90</ValueEnum>
+        <ValueCode>4442</ValueCode>
+        <ValueName>EnterKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; EnterKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>118</ValueEnum>
+        <ValueCode>4470</ValueCode>
+        <ValueName>EscapeKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; EscapeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>5</ValueEnum>
+        <ValueCode>4357</ValueCode>
+        <ValueName>F1Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>6</ValueEnum>
+        <ValueCode>4358</ValueCode>
+        <ValueName>F2Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>4</ValueEnum>
+        <ValueCode>4356</ValueCode>
+        <ValueName>F3Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F3Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>12</ValueEnum>
+        <ValueCode>4364</ValueCode>
+        <ValueName>F4Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F4Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>4355</ValueCode>
+        <ValueName>F5Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F5Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>11</ValueEnum>
+        <ValueCode>4363</ValueCode>
+        <ValueName>F6Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F6Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>131</ValueEnum>
+        <ValueCode>4483</ValueCode>
+        <ValueName>F7Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F7Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>10</ValueEnum>
+        <ValueCode>4362</ValueCode>
+        <ValueName>F8Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F8Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>4353</ValueCode>
+        <ValueName>F9Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F9Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>9</ValueEnum>
+        <ValueCode>4361</ValueCode>
+        <ValueName>F10Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F10Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>120</ValueEnum>
+        <ValueCode>4472</ValueCode>
+        <ValueName>F11Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F11Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>7</ValueEnum>
+        <ValueCode>4359</ValueCode>
+        <ValueName>F12Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; F12Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>126</ValueEnum>
+        <ValueCode>4478</ValueCode>
+        <ValueName>ScrollLockKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; ScrollLockKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>84</ValueEnum>
+        <ValueCode>4436</ValueCode>
+        <ValueName>OpenBracketKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; OpenBracketKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>119</ValueEnum>
+        <ValueCode>4471</ValueCode>
+        <ValueName>NumLockKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumLockKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>124</ValueEnum>
+        <ValueCode>4476</ValueCode>
+        <ValueName>MultiplyKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; MultiplyKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>123</ValueEnum>
+        <ValueCode>4475</ValueCode>
+        <ValueName>SubtractKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; SubtractKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>121</ValueEnum>
+        <ValueCode>4473</ValueCode>
+        <ValueName>AddKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; AddKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>113</ValueEnum>
+        <ValueCode>4465</ValueCode>
+        <ValueName>DecimalKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; DecimalKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>112</ValueEnum>
+        <ValueCode>4464</ValueCode>
+        <ValueName>NumPad0Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad0Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>105</ValueEnum>
+        <ValueCode>4457</ValueCode>
+        <ValueName>NumPad1Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>114</ValueEnum>
+        <ValueCode>4466</ValueCode>
+        <ValueName>NumPad2Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>122</ValueEnum>
+        <ValueCode>4474</ValueCode>
+        <ValueName>NumPad3Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad3Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>107</ValueEnum>
+        <ValueCode>4459</ValueCode>
+        <ValueName>NumPad4Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad4Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>115</ValueEnum>
+        <ValueCode>4467</ValueCode>
+        <ValueName>NumPad5Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad5Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>116</ValueEnum>
+        <ValueCode>4468</ValueCode>
+        <ValueName>NumPad6Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad6Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>108</ValueEnum>
+        <ValueCode>4460</ValueCode>
+        <ValueName>NumPad7Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad7Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>117</ValueEnum>
+        <ValueCode>4469</ValueCode>
+        <ValueName>NumPad8Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad8Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>125</ValueEnum>
+        <ValueCode>4477</ValueCode>
+        <ValueName>NumPad9Key</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; NumPad9Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>91</ValueEnum>
+        <ValueCode>4443</ValueCode>
+        <ValueName>CloseBracketKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; CloseBracketKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>76</ValueEnum>
+        <ValueCode>4428</ValueCode>
+        <ValueName>SemicolonKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; SemicolonKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>82</ValueEnum>
+        <ValueCode>4434</ValueCode>
+        <ValueName>QuoteKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; QuoteKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>65</ValueEnum>
+        <ValueCode>4417</ValueCode>
+        <ValueName>CommaKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; CommaKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4352</TriggerCode>
+        <ValueEnum>73</ValueEnum>
+        <ValueCode>4425</ValueCode>
+        <ValueName>PeriodKey</ValueName>
+        <ValueFullName>Keyboard &gt; KeyReleased &gt; PeriodKey</ValueFullName>
+      </EventValue>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>4096</DeviceCode>
+      <TriggerEnum>2</TriggerEnum>
+      <TriggerCode>4608</TriggerCode>
+      <TriggerName>EKeyPressed</TriggerName>
+      <TriggerFullName>Keyboard &gt; EKeyPressed</TriggerFullName>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>31</ValueEnum>
+        <ValueCode>4639</ValueCode>
+        <ValueName>LeftWindowsKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; LeftWindowsKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>20</ValueEnum>
+        <ValueCode>4628</ValueCode>
+        <ValueName>RightControlKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; RightControlKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>39</ValueEnum>
+        <ValueCode>4647</ValueCode>
+        <ValueName>RightWindowsKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; RightWindowsKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>17</ValueEnum>
+        <ValueCode>4625</ValueCode>
+        <ValueName>RightAltKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; RightAltKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>47</ValueEnum>
+        <ValueCode>4655</ValueCode>
+        <ValueName>AppsKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; AppsKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>112</ValueEnum>
+        <ValueCode>4720</ValueCode>
+        <ValueName>InsertKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; InsertKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>108</ValueEnum>
+        <ValueCode>4716</ValueCode>
+        <ValueName>HomeKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; HomeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>125</ValueEnum>
+        <ValueCode>4733</ValueCode>
+        <ValueName>PageUpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; PageUpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>113</ValueEnum>
+        <ValueCode>4721</ValueCode>
+        <ValueName>DeleteKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; DeleteKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>105</ValueEnum>
+        <ValueCode>4713</ValueCode>
+        <ValueName>EndKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; EndKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>122</ValueEnum>
+        <ValueCode>4730</ValueCode>
+        <ValueName>PageDownKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; PageDownKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>117</ValueEnum>
+        <ValueCode>4725</ValueCode>
+        <ValueName>UpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; UpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>107</ValueEnum>
+        <ValueCode>4715</ValueCode>
+        <ValueName>LeftKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; LeftKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>114</ValueEnum>
+        <ValueCode>4722</ValueCode>
+        <ValueName>DownKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; DownKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>116</ValueEnum>
+        <ValueCode>4724</ValueCode>
+        <ValueName>RightKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; RightKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>74</ValueEnum>
+        <ValueCode>4682</ValueCode>
+        <ValueName>SlashKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; SlashKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>77</ValueEnum>
+        <ValueCode>4685</ValueCode>
+        <ValueName>NextTrackKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; NextTrackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>21</ValueEnum>
+        <ValueCode>4629</ValueCode>
+        <ValueName>PreviousTrackKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; PreviousTrackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>59</ValueEnum>
+        <ValueCode>4667</ValueCode>
+        <ValueName>StopKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; StopKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>52</ValueEnum>
+        <ValueCode>4660</ValueCode>
+        <ValueName>PlayPauseKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; PlayPauseKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>35</ValueEnum>
+        <ValueCode>4643</ValueCode>
+        <ValueName>MuteKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; MuteKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>50</ValueEnum>
+        <ValueCode>4658</ValueCode>
+        <ValueName>VolumeUpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; VolumeUpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>33</ValueEnum>
+        <ValueCode>4641</ValueCode>
+        <ValueName>VolumeDownKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; VolumeDownKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>80</ValueEnum>
+        <ValueCode>4688</ValueCode>
+        <ValueName>MediaSelectKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; MediaSelectKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>72</ValueEnum>
+        <ValueCode>4680</ValueCode>
+        <ValueName>LaunchMailKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; LaunchMailKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>43</ValueEnum>
+        <ValueCode>4651</ValueCode>
+        <ValueName>CalculatorKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; CalculatorKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>64</ValueEnum>
+        <ValueCode>4672</ValueCode>
+        <ValueName>ComputerKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; ComputerKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>16</ValueEnum>
+        <ValueCode>4624</ValueCode>
+        <ValueName>BrowserSearchKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserSearchKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>58</ValueEnum>
+        <ValueCode>4666</ValueCode>
+        <ValueName>BrowserHomeKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserHomeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>56</ValueEnum>
+        <ValueCode>4664</ValueCode>
+        <ValueName>BrowserBackKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserBackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>48</ValueEnum>
+        <ValueCode>4656</ValueCode>
+        <ValueName>BrowserForwardKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserForwardKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>40</ValueEnum>
+        <ValueCode>4648</ValueCode>
+        <ValueName>BrowserStopKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserStopKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>32</ValueEnum>
+        <ValueCode>4640</ValueCode>
+        <ValueName>BrowserRefreshKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserRefreshKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>24</ValueEnum>
+        <ValueCode>4632</ValueCode>
+        <ValueName>BrowserFavoritesKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; BrowserFavoritesKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>55</ValueEnum>
+        <ValueCode>4663</ValueCode>
+        <ValueName>PowerKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; PowerKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>63</ValueEnum>
+        <ValueCode>4671</ValueCode>
+        <ValueName>SleepKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; SleepKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>94</ValueEnum>
+        <ValueCode>4702</ValueCode>
+        <ValueName>WakeKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; WakeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>68</ValueEnum>
+        <ValueCode>4676</ValueCode>
+        <ValueName>Track1Key</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; Track1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>30</ValueEnum>
+        <ValueCode>4638</ValueCode>
+        <ValueName>Track2Key</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; Track2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>46</ValueEnum>
+        <ValueCode>4654</ValueCode>
+        <ValueName>RecordKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; RecordKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>44</ValueEnum>
+        <ValueCode>4652</ValueCode>
+        <ValueName>ClubHPKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; ClubHPKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>75</ValueEnum>
+        <ValueCode>4683</ValueCode>
+        <ValueName>HelpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; HelpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4608</TriggerCode>
+        <ValueEnum>51</ValueEnum>
+        <ValueCode>4659</ValueCode>
+        <ValueName>InternetKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyPressed &gt; InternetKey</ValueFullName>
+      </EventValue>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>4096</DeviceCode>
+      <TriggerEnum>3</TriggerEnum>
+      <TriggerCode>4864</TriggerCode>
+      <TriggerName>EKeyReleased</TriggerName>
+      <TriggerFullName>Keyboard &gt; EKeyReleased</TriggerFullName>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>31</ValueEnum>
+        <ValueCode>4895</ValueCode>
+        <ValueName>LeftWindowsKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; LeftWindowsKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>20</ValueEnum>
+        <ValueCode>4884</ValueCode>
+        <ValueName>RightControlKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; RightControlKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>39</ValueEnum>
+        <ValueCode>4903</ValueCode>
+        <ValueName>RightWindowsKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; RightWindowsKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>17</ValueEnum>
+        <ValueCode>4881</ValueCode>
+        <ValueName>RightAltKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; RightAltKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>47</ValueEnum>
+        <ValueCode>4911</ValueCode>
+        <ValueName>AppsKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; AppsKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>112</ValueEnum>
+        <ValueCode>4976</ValueCode>
+        <ValueName>InsertKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; InsertKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>108</ValueEnum>
+        <ValueCode>4972</ValueCode>
+        <ValueName>HomeKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; HomeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>125</ValueEnum>
+        <ValueCode>4989</ValueCode>
+        <ValueName>PageUpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; PageUpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>113</ValueEnum>
+        <ValueCode>4977</ValueCode>
+        <ValueName>DeleteKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; DeleteKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>105</ValueEnum>
+        <ValueCode>4969</ValueCode>
+        <ValueName>EndKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; EndKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>122</ValueEnum>
+        <ValueCode>4986</ValueCode>
+        <ValueName>PageDownKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; PageDownKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>117</ValueEnum>
+        <ValueCode>4981</ValueCode>
+        <ValueName>UpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; UpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>107</ValueEnum>
+        <ValueCode>4971</ValueCode>
+        <ValueName>LeftKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; LeftKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>114</ValueEnum>
+        <ValueCode>4978</ValueCode>
+        <ValueName>DownKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; DownKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>116</ValueEnum>
+        <ValueCode>4980</ValueCode>
+        <ValueName>RightKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; RightKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>74</ValueEnum>
+        <ValueCode>4938</ValueCode>
+        <ValueName>SlashKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; SlashKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>77</ValueEnum>
+        <ValueCode>4941</ValueCode>
+        <ValueName>NextTrackKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; NextTrackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>21</ValueEnum>
+        <ValueCode>4885</ValueCode>
+        <ValueName>PreviousTrackKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; PreviousTrackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>59</ValueEnum>
+        <ValueCode>4923</ValueCode>
+        <ValueName>StopKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; StopKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>52</ValueEnum>
+        <ValueCode>4916</ValueCode>
+        <ValueName>PlayPauseKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; PlayPauseKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>35</ValueEnum>
+        <ValueCode>4899</ValueCode>
+        <ValueName>MuteKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; MuteKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>50</ValueEnum>
+        <ValueCode>4914</ValueCode>
+        <ValueName>VolumeUpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; VolumeUpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>33</ValueEnum>
+        <ValueCode>4897</ValueCode>
+        <ValueName>VolumeDownKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; VolumeDownKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>80</ValueEnum>
+        <ValueCode>4944</ValueCode>
+        <ValueName>MediaSelectKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; MediaSelectKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>72</ValueEnum>
+        <ValueCode>4936</ValueCode>
+        <ValueName>LaunchMailKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; LaunchMailKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>43</ValueEnum>
+        <ValueCode>4907</ValueCode>
+        <ValueName>CalculatorKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; CalculatorKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>64</ValueEnum>
+        <ValueCode>4928</ValueCode>
+        <ValueName>ComputerKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; ComputerKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>16</ValueEnum>
+        <ValueCode>4880</ValueCode>
+        <ValueName>BrowserSearchKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserSearchKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>58</ValueEnum>
+        <ValueCode>4922</ValueCode>
+        <ValueName>BrowserHomeKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserHomeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>56</ValueEnum>
+        <ValueCode>4920</ValueCode>
+        <ValueName>BrowserBackKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserBackKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>48</ValueEnum>
+        <ValueCode>4912</ValueCode>
+        <ValueName>BrowserForwardKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserForwardKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>40</ValueEnum>
+        <ValueCode>4904</ValueCode>
+        <ValueName>BrowserStopKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserStopKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>32</ValueEnum>
+        <ValueCode>4896</ValueCode>
+        <ValueName>BrowserRefreshKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserRefreshKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>24</ValueEnum>
+        <ValueCode>4888</ValueCode>
+        <ValueName>BrowserFavoritesKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; BrowserFavoritesKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>55</ValueEnum>
+        <ValueCode>4919</ValueCode>
+        <ValueName>PowerKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; PowerKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>63</ValueEnum>
+        <ValueCode>4927</ValueCode>
+        <ValueName>SleepKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; SleepKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>94</ValueEnum>
+        <ValueCode>4958</ValueCode>
+        <ValueName>WakeKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; WakeKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>68</ValueEnum>
+        <ValueCode>4932</ValueCode>
+        <ValueName>Track1Key</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; Track1Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>30</ValueEnum>
+        <ValueCode>4894</ValueCode>
+        <ValueName>Track2Key</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; Track2Key</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>46</ValueEnum>
+        <ValueCode>4910</ValueCode>
+        <ValueName>RecordKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; RecordKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>44</ValueEnum>
+        <ValueCode>4908</ValueCode>
+        <ValueName>ClubHPKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; ClubHPKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>75</ValueEnum>
+        <ValueCode>4939</ValueCode>
+        <ValueName>HelpKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; HelpKey</ValueFullName>
+      </EventValue>
+      <EventValue>
+        <TriggerCode>4864</TriggerCode>
+        <ValueEnum>51</ValueEnum>
+        <ValueCode>4915</ValueCode>
+        <ValueName>InternetKey</ValueName>
+        <ValueFullName>Keyboard &gt; EKeyReleased &gt; InternetKey</ValueFullName>
+      </EventValue>
+    </EventTrigger>
+    <ActionTarget>
+      <DeviceCode>4096</DeviceCode>
+      <TargetEnum>1</TargetEnum>
+      <TargetCode>4352</TargetCode>
+      <TargetName>LampOn</TargetName>
+      <TargetFullName>Keyboard &gt; LampOn</TargetFullName>
+      <ActionValue>
+        <TargetCode>4352</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>4352</ValueCode>
+        <ValueName>ScrollLock</ValueName>
+        <ValueFullName>Keyboard &gt; LampOn &gt; ScrollLock</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>4352</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>4353</ValueCode>
+        <ValueName>CapsLock</ValueName>
+        <ValueFullName>Keyboard &gt; LampOn &gt; CapsLock</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>4352</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>4354</ValueCode>
+        <ValueName>NumLock</ValueName>
+        <ValueFullName>Keyboard &gt; LampOn &gt; NumLock</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>4096</DeviceCode>
+      <TargetEnum>0</TargetEnum>
+      <TargetCode>4096</TargetCode>
+      <TargetName>LampOff</TargetName>
+      <TargetFullName>Keyboard &gt; LampOff</TargetFullName>
+      <ActionValue>
+        <TargetCode>4096</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>4096</ValueCode>
+        <ValueName>ScrollLock</ValueName>
+        <ValueFullName>Keyboard &gt; LampOff &gt; ScrollLock</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>4096</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>4097</ValueCode>
+        <ValueName>CapsLock</ValueName>
+        <ValueFullName>Keyboard &gt; LampOff &gt; CapsLock</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>4096</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>4098</ValueCode>
+        <ValueName>NumLock</ValueName>
+        <ValueFullName>Keyboard &gt; LampOff &gt; NumLock</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+  </Device>
+  <Device>
+    <DeviceEnum>2</DeviceEnum>
+    <DeviceCode>8192</DeviceCode>
+    <DeviceName>Mouse</DeviceName>
+    <DeviceFullName>Mouse</DeviceFullName>
+    <EventTrigger>
+      <DeviceCode>8192</DeviceCode>
+      <TriggerEnum>0</TriggerEnum>
+      <TriggerCode>8192</TriggerCode>
+      <TriggerName>MButtonPressed</TriggerName>
+      <TriggerFullName>Mouse &gt; MButtonPressed</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>8192</DeviceCode>
+      <TriggerEnum>1</TriggerEnum>
+      <TriggerCode>8448</TriggerCode>
+      <TriggerName>MButtonReleased</TriggerName>
+      <TriggerFullName>Mouse &gt; MButtonReleased</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>8192</DeviceCode>
+      <TriggerEnum>2</TriggerEnum>
+      <TriggerCode>8704</TriggerCode>
+      <TriggerName>MDeltaX</TriggerName>
+      <TriggerFullName>Mouse &gt; MDeltaX</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>8192</DeviceCode>
+      <TriggerEnum>3</TriggerEnum>
+      <TriggerCode>8960</TriggerCode>
+      <TriggerName>MDeltaY</TriggerName>
+      <TriggerFullName>Mouse &gt; MDeltaY</TriggerFullName>
+    </EventTrigger>
+    <ActionTarget>
+      <DeviceCode>8192</DeviceCode>
+      <TargetEnum>255</TargetEnum>
+      <TargetCode>73472</TargetCode>
+      <TargetName>Reset</TargetName>
+      <TargetFullName>Mouse &gt; Reset</TargetFullName>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>8192</DeviceCode>
+      <TargetEnum>1</TargetEnum>
+      <TargetCode>8448</TargetCode>
+      <TargetName>Resolution</TargetName>
+      <TargetFullName>Mouse &gt; Resolution</TargetFullName>
+      <ActionValue>
+        <TargetCode>8448</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>8448</ValueCode>
+        <ValueName>Count1</ValueName>
+        <ValueFullName>Mouse &gt; Resolution &gt; Count1</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8448</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>8449</ValueCode>
+        <ValueName>Count2</ValueName>
+        <ValueFullName>Mouse &gt; Resolution &gt; Count2</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8448</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>8450</ValueCode>
+        <ValueName>Count4</ValueName>
+        <ValueFullName>Mouse &gt; Resolution &gt; Count4</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8448</TargetCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>8451</ValueCode>
+        <ValueName>Count8</ValueName>
+        <ValueFullName>Mouse &gt; Resolution &gt; Count8</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>8192</DeviceCode>
+      <TargetEnum>2</TargetEnum>
+      <TargetCode>8704</TargetCode>
+      <TargetName>Frequency</TargetName>
+      <TargetFullName>Mouse &gt; Frequency</TargetFullName>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>10</ValueEnum>
+        <ValueCode>8714</ValueCode>
+        <ValueName>Rate10</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate10</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>20</ValueEnum>
+        <ValueCode>8724</ValueCode>
+        <ValueName>Rate20</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate20</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>40</ValueEnum>
+        <ValueCode>8744</ValueCode>
+        <ValueName>Rate40</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate40</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>60</ValueEnum>
+        <ValueCode>8764</ValueCode>
+        <ValueName>Rate60</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate60</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>80</ValueEnum>
+        <ValueCode>8784</ValueCode>
+        <ValueName>Rate80</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate80</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>100</ValueEnum>
+        <ValueCode>8804</ValueCode>
+        <ValueName>Rate100</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate100</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>8704</TargetCode>
+        <ValueEnum>200</ValueEnum>
+        <ValueCode>8904</ValueCode>
+        <ValueName>Rate200</ValueName>
+        <ValueFullName>Mouse &gt; Frequency &gt; Rate200</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>8192</DeviceCode>
+      <TargetEnum>3</TargetEnum>
+      <TargetCode>8960</TargetCode>
+      <TargetName>Scale</TargetName>
+      <TargetFullName>Mouse &gt; Scale</TargetFullName>
+    </ActionTarget>
+  </Device>
+  <Device>
+    <DeviceEnum>3</DeviceEnum>
+    <DeviceCode>12288</DeviceCode>
+    <DeviceName>Usb</DeviceName>
+    <DeviceFullName>Usb</DeviceFullName>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>0</TriggerEnum>
+      <TriggerCode>12288</TriggerCode>
+      <TriggerName>UKeyPressed</TriggerName>
+      <TriggerFullName>Usb &gt; UKeyPressed</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>1</TriggerEnum>
+      <TriggerCode>12544</TriggerCode>
+      <TriggerName>UKeyReleased</TriggerName>
+      <TriggerFullName>Usb &gt; UKeyReleased</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>2</TriggerEnum>
+      <TriggerCode>12800</TriggerCode>
+      <TriggerName>UMoveX</TriggerName>
+      <TriggerFullName>Usb &gt; UMoveX</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>3</TriggerEnum>
+      <TriggerCode>13056</TriggerCode>
+      <TriggerName>UMoveY</TriggerName>
+      <TriggerFullName>Usb &gt; UMoveY</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>4</TriggerEnum>
+      <TriggerCode>13312</TriggerCode>
+      <TriggerName>ULookX</TriggerName>
+      <TriggerFullName>Usb &gt; ULookX</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>5</TriggerEnum>
+      <TriggerCode>13568</TriggerCode>
+      <TriggerName>ULookY</TriggerName>
+      <TriggerFullName>Usb &gt; ULookY</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>6</TriggerEnum>
+      <TriggerCode>13824</TriggerCode>
+      <TriggerName>UPrimaryTrigger</TriggerName>
+      <TriggerFullName>Usb &gt; UPrimaryTrigger</TriggerFullName>
+    </EventTrigger>
+    <EventTrigger>
+      <DeviceCode>12288</DeviceCode>
+      <TriggerEnum>7</TriggerEnum>
+      <TriggerCode>14080</TriggerCode>
+      <TriggerName>USecondaryTrigger</TriggerName>
+      <TriggerFullName>Usb &gt; USecondaryTrigger</TriggerFullName>
+    </EventTrigger>
+  </Device>
+  <Device>
+    <DeviceEnum>4</DeviceEnum>
+    <DeviceCode>16384</DeviceCode>
+    <DeviceName>XBox</DeviceName>
+    <DeviceFullName>XBox</DeviceFullName>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>0</TargetEnum>
+      <TargetCode>16384</TargetCode>
+      <TargetName>LeftStickX</TargetName>
+      <TargetFullName>XBox &gt; LeftStickX</TargetFullName>
+      <ActionValue>
+        <TargetCode>16384</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>16384</ValueCode>
+        <ValueName>MoveForward</ValueName>
+        <ValueFullName>XBox &gt; LeftStickX &gt; MoveForward</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16384</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>16385</ValueCode>
+        <ValueName>MoveBackward</ValueName>
+        <ValueFullName>XBox &gt; LeftStickX &gt; MoveBackward</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16384</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>16386</ValueCode>
+        <ValueName>MoveIdle</ValueName>
+        <ValueFullName>XBox &gt; LeftStickX &gt; MoveIdle</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16384</TargetCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>16387</ValueCode>
+        <ValueName>MoveAnalog</ValueName>
+        <ValueFullName>XBox &gt; LeftStickX &gt; MoveAnalog</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>1</TargetEnum>
+      <TargetCode>16640</TargetCode>
+      <TargetName>LeftStickY</TargetName>
+      <TargetFullName>XBox &gt; LeftStickY</TargetFullName>
+      <ActionValue>
+        <TargetCode>16640</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>16640</ValueCode>
+        <ValueName>MoveForward</ValueName>
+        <ValueFullName>XBox &gt; LeftStickY &gt; MoveForward</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16640</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>16641</ValueCode>
+        <ValueName>MoveBackward</ValueName>
+        <ValueFullName>XBox &gt; LeftStickY &gt; MoveBackward</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16640</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>16642</ValueCode>
+        <ValueName>MoveIdle</ValueName>
+        <ValueFullName>XBox &gt; LeftStickY &gt; MoveIdle</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16640</TargetCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>16643</ValueCode>
+        <ValueName>MoveAnalog</ValueName>
+        <ValueFullName>XBox &gt; LeftStickY &gt; MoveAnalog</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>2</TargetEnum>
+      <TargetCode>16896</TargetCode>
+      <TargetName>RightStickX</TargetName>
+      <TargetFullName>XBox &gt; RightStickX</TargetFullName>
+      <ActionValue>
+        <TargetCode>16896</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>16896</ValueCode>
+        <ValueName>LookLeft</ValueName>
+        <ValueFullName>XBox &gt; RightStickX &gt; LookLeft</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16896</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>16897</ValueCode>
+        <ValueName>LookRight</ValueName>
+        <ValueFullName>XBox &gt; RightStickX &gt; LookRight</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16896</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>16898</ValueCode>
+        <ValueName>LookIdle</ValueName>
+        <ValueFullName>XBox &gt; RightStickX &gt; LookIdle</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>16896</TargetCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>16899</ValueCode>
+        <ValueName>LookAnalog</ValueName>
+        <ValueFullName>XBox &gt; RightStickX &gt; LookAnalog</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>3</TargetEnum>
+      <TargetCode>17152</TargetCode>
+      <TargetName>RightStickY</TargetName>
+      <TargetFullName>XBox &gt; RightStickY</TargetFullName>
+      <ActionValue>
+        <TargetCode>17152</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>17152</ValueCode>
+        <ValueName>LookUp</ValueName>
+        <ValueFullName>XBox &gt; RightStickY &gt; LookUp</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17152</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>17153</ValueCode>
+        <ValueName>LookDown</ValueName>
+        <ValueFullName>XBox &gt; RightStickY &gt; LookDown</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17152</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>17154</ValueCode>
+        <ValueName>LookIdle</ValueName>
+        <ValueFullName>XBox &gt; RightStickY &gt; LookIdle</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17152</TargetCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>17155</ValueCode>
+        <ValueName>LookAnalog</ValueName>
+        <ValueFullName>XBox &gt; RightStickY &gt; LookAnalog</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>4</TargetEnum>
+      <TargetCode>17408</TargetCode>
+      <TargetName>XKeyPress</TargetName>
+      <TargetFullName>XBox &gt; XKeyPress</TargetFullName>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>17408</ValueCode>
+        <ValueName>AButton</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; AButton</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>17409</ValueCode>
+        <ValueName>BButton</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; BButton</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>17410</ValueCode>
+        <ValueName>XButton</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; XButton</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>3</ValueEnum>
+        <ValueCode>17411</ValueCode>
+        <ValueName>YButton</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; YButton</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>4</ValueEnum>
+        <ValueCode>17412</ValueCode>
+        <ValueName>UpPad</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; UpPad</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>5</ValueEnum>
+        <ValueCode>17413</ValueCode>
+        <ValueName>DownPad</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; DownPad</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>6</ValueEnum>
+        <ValueCode>17414</ValueCode>
+        <ValueName>LeftPad</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; LeftPad</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17408</TargetCode>
+        <ValueEnum>7</ValueEnum>
+        <ValueCode>17415</ValueCode>
+        <ValueName>RightPad</ValueName>
+        <ValueFullName>XBox &gt; XKeyPress &gt; RightPad</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>5</TargetEnum>
+      <TargetCode>17664</TargetCode>
+      <TargetName>XKeyRelease</TargetName>
+      <TargetFullName>XBox &gt; XKeyRelease</TargetFullName>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>6</TargetEnum>
+      <TargetCode>17920</TargetCode>
+      <TargetName>LeftTrigger</TargetName>
+      <TargetFullName>XBox &gt; LeftTrigger</TargetFullName>
+      <ActionValue>
+        <TargetCode>17920</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>17920</ValueCode>
+        <ValueName>TriggerRelease</ValueName>
+        <ValueFullName>XBox &gt; LeftTrigger &gt; TriggerRelease</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17920</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>17921</ValueCode>
+        <ValueName>TriggerPull</ValueName>
+        <ValueFullName>XBox &gt; LeftTrigger &gt; TriggerPull</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>17920</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>17922</ValueCode>
+        <ValueName>TriggerAnalog</ValueName>
+        <ValueFullName>XBox &gt; LeftTrigger &gt; TriggerAnalog</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+    <ActionTarget>
+      <DeviceCode>16384</DeviceCode>
+      <TargetEnum>7</TargetEnum>
+      <TargetCode>18176</TargetCode>
+      <TargetName>RightTrigger</TargetName>
+      <TargetFullName>XBox &gt; RightTrigger</TargetFullName>
+      <ActionValue>
+        <TargetCode>18176</TargetCode>
+        <ValueEnum>0</ValueEnum>
+        <ValueCode>18176</ValueCode>
+        <ValueName>TriggerRelease</ValueName>
+        <ValueFullName>XBox &gt; RightTrigger &gt; TriggerRelease</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>18176</TargetCode>
+        <ValueEnum>1</ValueEnum>
+        <ValueCode>18177</ValueCode>
+        <ValueName>TriggerPull</ValueName>
+        <ValueFullName>XBox &gt; RightTrigger &gt; TriggerPull</ValueFullName>
+      </ActionValue>
+      <ActionValue>
+        <TargetCode>18176</TargetCode>
+        <ValueEnum>2</ValueEnum>
+        <ValueCode>18178</ValueCode>
+        <ValueName>TriggerAnalog</ValueName>
+        <ValueFullName>XBox &gt; RightTrigger &gt; TriggerAnalog</ValueFullName>
+      </ActionValue>
+    </ActionTarget>
+  </Device>
+  <Device>
+    <DeviceEnum>5</DeviceEnum>
+    <DeviceCode>20480</DeviceCode>
+    <DeviceName>Arcade</DeviceName>
+    <DeviceFullName>Arcade</DeviceFullName>
+  </Device>
+  <Device>
+    <DeviceEnum>6</DeviceEnum>
+    <DeviceCode>24576</DeviceCode>
+    <DeviceName>Joystick</DeviceName>
+    <DeviceFullName>Joystick</DeviceFullName>
+  </Device>
+  <Device>
+    <DeviceEnum>7</DeviceEnum>
+    <DeviceCode>28672</DeviceCode>
+    <DeviceName>Script</DeviceName>
+    <DeviceFullName>Script</DeviceFullName>
+  </Device>
+</EvaDataSet>
