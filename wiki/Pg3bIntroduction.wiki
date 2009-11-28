@@ -11,7 +11,7 @@ PG3B is a hardware circuit and software modules that provide everything from low
 
 Application modules are assembled like building blocks to make the perfect controller for your game. The system is completely open and ready to meet your needs. Example applications under development include XBoxMouse, XBoxKeyboard, XBoxRapidFire, and Machine Vision Targeting. These are standalone applications written in Java or C#.
 
-<img width="600" align ="middle" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BDevelopmentSoftware-1.png" alt="PG3B Development Environment" />
+<img width="600" align="middle" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BDevelopmentSoftware-1.png" alt="PG3B Development Environment" />
 
 The Driver layer is similar to the Microsoft XNA 3.0 Game Studio API. Unlike XNA the values are writable because they send GamePad instructions to the XBox 360 game console. The Driver layer is available for Java and C# development environments.
 
@@ -59,7 +59,7 @@ Controlling the XBox 360 from your computer is really easy. All of the developme
 
 PG3B has a surprisingly small number of functional blocks but it allows full control of XBox 360 Wired and Wireless controllers. The core of the system is a complete USB-based micro-controller development system. It has a lot of power packed into a very small footprint! All programming is done via the USB port. No special programmer is needed, only a standard "Mini-B" USB cable and a PC  with a USB port.
 
-<img width="600" align ="middle" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BPrototypeII-1.png" alt="PG3B Prototype II" />
+<img width="600" align="middle" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BPrototypeII-1.png" alt="PG3B Prototype II" />
 
 The PG3B circuit has an AT90USB646 AVR micro-controller with 64512 bytes of flash memory for your code, 4096 bytes of RAM for program variables, and 2048 bytes of EEPROM to store configuration data. This is small compared to the resources available to a PC but plenty to run the USB port and drivers for up to sixteen input devices.
 
