@@ -65,6 +65,7 @@ static uint8_t kb_lastbyte;
 static uint8_t kb_retry;
 static uint8_t kb_leds;
 static uint8_t kb_cmd;
+static uint8_t kb_selftest;
 
 static uint16_t kb_led_dutycycle;
 static uint16_t kb_led_delay;
@@ -76,6 +77,7 @@ static uint16_t kb_led_keycode;
  ********************************************************************************
  */
 static uint16_t KB_GetScancode( void );
+static void KB_KeyboardReset( void );
 static void KB_Send( uint8_t data );
 static void KB_KeyboardEventFilter( uint16_t scancode );
 
@@ -86,29 +88,30 @@ static void KB_KeyboardEventFilter( uint16_t scancode );
  */
 void KB_Init( void )
 {
-	kb_bit_n = 1;
-	kb_buffer = 0;
-	kb_error = 0;
+    kb_bit_n = 1;
+    kb_buffer = 0;
+    kb_error = 0;
 
-	kb_e0_f0 = 0;
-	kb_scancode = 0;
+    kb_e0_f0 = 0;
+    kb_scancode = 0;
 
-	RING_Initialize( &kb_ringbuffer, kb_data, sizeof( kb_data ) );
+    RING_Initialize( &kb_ringbuffer, kb_data, sizeof( kb_data ) );
 
-	kb_lastbyte = 0;
-	kb_retry = 0;
-	kb_leds = 0;
-	kb_cmd = 0;
+    kb_lastbyte = 0;
+    kb_retry = 0;
+    kb_leds = 0;
+    kb_cmd = 0;
+    kb_selftest = 0;
 
-	// Enable pullup on clock
-	sbi( KB_CLOCK_PORT, KB_CLOCK_BIT );
+    // Enable pullup on clock
+    sbi( KB_CLOCK_PORT, KB_CLOCK_BIT );
 
-	// Enable heartbeat
-	KB_NormalStateLed( );
+    // Enable heartbeat
+    KB_NormalStateLed( );
 
-	// Set interrupts
-	kb_clock_falling_edge( );
-	kb_clock_enable_interrupt( );
+    // Set interrupts
+    kb_clock_falling_edge( );
+    kb_clock_enable_interrupt( );
 }
 
 /*
@@ -119,16 +122,16 @@ void KB_Init( void )
 
 void KB_EventTask( void )
 {
-	uint16_t scancode;
+    uint16_t scancode;
 
-	if( ( scancode = KB_GetScancode( ) ) > 0 ) {
-		KB_KeyboardEventFilter( scancode );
-	}
-	else if ( kb_led_delay-- == 0 )
-	{
-		KB_KeyboardEventFilter( kb_led_keycode );
-		kb_led_delay = kb_led_dutycycle;
-	}
+    if( ( scancode = KB_GetScancode( ) ) > 0 ) {
+        KB_KeyboardEventFilter( scancode );
+    }
+    else if ( kb_led_delay-- == 0 )
+    {
+        KB_KeyboardEventFilter( kb_led_keycode );
+        kb_led_delay = kb_led_dutycycle;
+    }
 }
 
 /*
@@ -138,8 +141,8 @@ void KB_EventTask( void )
  */
 void KB_ErrorStateLed( void )
 {
-	kb_led_keycode = KB_KeyPress( ScrollLockKey );
-	kb_led_dutycycle = KB_LED_ERROR;
+    kb_led_keycode = KB_KeyPress( ScrollLockKey );
+    kb_led_dutycycle = KB_LED_ERROR;
 }
 
 /*
@@ -149,8 +152,8 @@ void KB_ErrorStateLed( void )
  */
 void KB_NormalStateLed( void )
 {
-	kb_led_keycode = KB_KeyPress( ScrollLockKey );
-	kb_led_dutycycle = KB_LED_NORMAL;
+    kb_led_keycode = KB_KeyPress( ScrollLockKey );
+    kb_led_dutycycle = KB_LED_NORMAL;
 }
 
 /*
@@ -160,64 +163,89 @@ void KB_NormalStateLed( void )
  */
 static void KB_KeyboardEventFilter( uint16_t scancode )
 {
-	// M
-	if( scancode == KB_KeyPress( MKey ) )
-	{
-		KB_NormalStateLed( );
-		MS_MouseReset( );
-	}
+    // AA - Self-test passed
+    if( scancode == KB_KeyPress( 0xAA ) )
+    {
+        LogByte( 'T', kb_selftest = 1 );
+    }
 
-	// SCROLL Lock
-	else if ( scancode == KB_KeyPress( ScrollLockKey ) )
-	{
-		KB_Send( kb_lastbyte = 0xED );
-		kb_cmd = 0x01;
-		kb_retry = 0;
-	}
+    // F12
+    else if( scancode == KB_KeyPress( F12Key ) )
+    {
+        KB_NormalStateLed( );
+        MS_MouseReset( );
+    }
 
-	// NUM Lock
-	else if( scancode == KB_KeyPress( NumLockKey ) )
-	{
-		KB_Send( kb_lastbyte = 0xED );
-		kb_cmd = 0x02;
-		kb_retry = 0;
-	}
+    // F11
+    else if( scancode == KB_KeyPress( F11Key ) )
+    {
+        KB_NormalStateLed( );
+        KB_KeyboardReset( );
+    }
 
-	// CAPS Lock
-	else if ( scancode == KB_KeyPress( CapsLockKey ) )
-	{
-		KB_Send( kb_lastbyte = 0xED );
-		kb_cmd = 0x04;
-		kb_retry = 0;
-	}
+    // SCROLL Lock
+    else if ( scancode == KB_KeyPress( ScrollLockKey ) )
+    {
+        KB_Send( kb_lastbyte = 0xED );
+        kb_cmd = 0x01;
+        kb_retry = 0;
+    }
 
-	// LED On/Off
-	else if( ( scancode == KB_KeyPress( 0xFA ) ) && ( kb_lastbyte == 0xED ) )
-	{
-		kb_leds ^= kb_cmd;
-		KB_Send( kb_lastbyte = kb_leds );
-		kb_retry = 0;
-	}
+    // NUM Lock
+    else if( scancode == KB_KeyPress( NumLockKey ) )
+    {
+        KB_Send( kb_lastbyte = 0xED );
+        kb_cmd = 0x02;
+        kb_retry = 0;
+    }
 
-	// RETRY
-	else if( scancode == KB_KeyPress( 0xFE ) )
-	{
-		if( kb_retry++ < 4 )
-		{
-			KB_Send( kb_lastbyte );
-		}
-		else if( kb_retry++ < 8 )
-		{
-			KB_Send( kb_lastbyte = 0xFF );
-		}
-	}
+    // CAPS Lock
+    else if ( scancode == KB_KeyPress( CapsLockKey ) )
+    {
+        KB_Send( kb_lastbyte = 0xED );
+        kb_cmd = 0x04;
+        kb_retry = 0;
+    }
 
-	// XBox Translation
-	if( ! ( scancode == KB_KeyPress( 0xFA ) || scancode == KB_KeyPress( 0xFE ) || scancode == KB_KeyPress( ScrollLockKey ) || scancode == KB_KeyRelease( ScrollLockKey ) ) )
-	{
-		LogWord( 'K', scancode );
-		EVA_InvokeEventAction( scancode );
-	}
+    // LED On/Off
+    else if( ( scancode == KB_KeyPress( 0xFA ) ) && ( kb_lastbyte == 0xED ) )
+    {
+        kb_leds ^= kb_cmd;
+        KB_Send( kb_lastbyte = kb_leds );
+        kb_retry = 0;
+    }
+
+    // RETRY
+    else if( scancode == KB_KeyPress( 0xFE ) )
+    {
+        if( kb_retry++ < 4 )
+        {
+            KB_Send( kb_lastbyte );
+        }
+        else if( kb_retry++ < 8 )
+        {
+            KB_Send( kb_lastbyte = 0xFF );
+        }
+    }
+
+    // XBox Translation
+    if( ! ( scancode == KB_KeyPress( 0xFA ) || scancode == KB_KeyPress( 0xFE ) || scancode == KB_KeyPress( ScrollLockKey ) || scancode == KB_KeyRelease( ScrollLockKey ) ) )
+    {
+        LogWord( 'K', scancode );
+        EVA_InvokeEventAction( scancode );
+    }
+}
+
+/*
+ ********************************************************************************
+ * KB_KeyboardReset
+ ********************************************************************************
+ */
+static void KB_KeyboardReset( void )
+{
+    LogByte( 'T', kb_selftest = 1 );
+    KB_Send( 0xFF );
+    LogByte( 'T', kb_selftest = 0 );
 }
 
 /*
@@ -227,26 +255,26 @@ static void KB_KeyboardEventFilter( uint16_t scancode )
  */
 static uint16_t KB_GetScancode( void )
 {
-	uint8_t byte;
+    uint8_t byte;
 
-	kb_scancode = 0;
-	if( RING_HasElement( &kb_ringbuffer ) )
-	{
-		switch( byte = RING_GetElement( &kb_ringbuffer ) )
-		{
-			case 0xE0:
-				kb_e0_f0 = (1<<KB_E0);
-				break;
-			case 0xF0:
-				kb_e0_f0 |= (1<<KB_F0);
-				break;
-			default:
-				kb_scancode = EVA_NewEvent( EVA_NewEventKey( Keyboard, kb_e0_f0 ), EVA_NewEventValue( byte ) );
-				kb_e0_f0 = 0;
-		}
-	}
+    kb_scancode = 0;
+    if( RING_HasElement( &kb_ringbuffer ) )
+    {
+        switch( byte = RING_GetElement( &kb_ringbuffer ) )
+        {
+            case 0xE0:
+                kb_e0_f0 = (1<<KB_E0);
+                break;
+            case 0xF0:
+                kb_e0_f0 |= (1<<KB_F0);
+                break;
+            default:
+                kb_scancode = EVA_NewEvent( EVA_NewEventKey( Keyboard, kb_e0_f0 ), EVA_NewEventValue( byte ) );
+                kb_e0_f0 = 0;
+        }
+    }
 
-	return kb_scancode;
+    return kb_scancode;
 }
 
 /*
@@ -272,6 +300,7 @@ static uint16_t KB_GetScancode( void )
  *  3) Release the Clock line. 
  *  4) Wait for the device to bring the Clock line low. 
  *  5) Set/reset the Data line to send the first data bit 
+ *  6) Wait for the device to bring Clock high.
  *  6) Wait for the device to bring Clock high. 
  *  7) Wait for the device to bring Clock low. 
  *  8) Repeat steps 5-7 for the other seven data bits and the parity bit 
@@ -283,77 +312,79 @@ static uint16_t KB_GetScancode( void )
  */
 static void KB_Send( uint8_t data )
 {
-	uint8_t kb_mask = 1;
+    uint8_t kb_mask = 1;
 
-	kb_clock_disable_interrupt( );
+    if( kb_selftest == 0 )
+        return;
+    kb_clock_disable_interrupt( );
 
-	// Clear the ISR state variables
-	kb_buffer = 0;
-	kb_error = 0;
-	kb_bit_n = 1;
+    // Clear the ISR state variables
+    kb_buffer = 0;
+    kb_error = 0;
+    kb_bit_n = 1;
 
-	// 1. Bring the Clock line low for at least 100 microseconds. 
-	cbi( KB_CLOCK_PORT, KB_CLOCK_BIT );
-	sbi( KB_CLOCK_DDR, KB_CLOCK_BIT );
-	_delay_us( 100 );
+    // 1. Bring the Clock line low for at least 100 microseconds. 
+    cbi( KB_CLOCK_PORT, KB_CLOCK_BIT );
+    sbi( KB_CLOCK_DDR, KB_CLOCK_BIT );
+    _delay_us( 100 );
 
-	// 2. Bring the Data line low.
-	cbi( KB_DATA_PORT, KB_DATA_BIT );
-	sbi( KB_DATA_DDR, KB_DATA_BIT );
+    // 2. Bring the Data line low.
+    cbi( KB_DATA_PORT, KB_DATA_BIT );
+    sbi( KB_DATA_DDR, KB_DATA_BIT );
 
-	// 3. Release the Clock line.
-	cbi( KB_CLOCK_DDR, KB_CLOCK_BIT );
-	sbi( KB_CLOCK_PORT, KB_CLOCK_BIT );
-	loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
+    // 3. Release the Clock line.
+    cbi( KB_CLOCK_DDR, KB_CLOCK_BIT );
+    sbi( KB_CLOCK_PORT, KB_CLOCK_BIT );
+    loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-	// 4. Wait for the device to bring the Clock line low. 
-	loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
+    // 4. Wait for the device to bring the Clock line low. 
+    loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-	// 5. Set/Reset the Data line to send the first data bit 
-	do {
-		if( data & kb_mask )
-			cbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line high.
-		else
-			sbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line low.
+    // 5. Set/Reset the Data line to send the first data bit 
+    do {
+        if( data & kb_mask )
+            cbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line high.
+        else
+            sbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line low.
 
-		// 6. Wait for the device to bring Clock high. 
-		loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
+        // 6. Wait for the device to bring Clock high. 
+        loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-		// 7. Wait for the device to bring Clock low.
-		loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
+        // 7. Wait for the device to bring Clock low.
+        loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-		// 8A. Repeat steps 5-7 for the other seven data bits
-	} while( kb_mask <<= 1 );
+        // 8A. Repeat steps 5-7 for the other seven data bits
+    } while( kb_mask <<= 1 );
 
-	// 8B. Repeat steps 5-7 for the parity bit.
-	if( parity_even_bit( data ) )
-		sbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line low.
-	else
-		cbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line high.
-	loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
-	loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
+    // 8B. Repeat steps 5-7 for the parity bit.
+    if( parity_even_bit( data ) )
+        sbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line low.
+    else
+        cbi( KB_DATA_DDR, KB_DATA_BIT );	// Take the data line high.
+    loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
+    loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-	// 9. Release the data line.
-	cbi( KB_DATA_DDR, KB_DATA_BIT );
-	cbi( KB_DATA_PORT, KB_DATA_BIT );
-	loop_until_bit_is_set( MS_CLOCK_PIN, MS_CLOCK_BIT );
+    // 9. Release the data line.
+    cbi( KB_DATA_DDR, KB_DATA_BIT );
+    cbi( KB_DATA_PORT, KB_DATA_BIT );
+    loop_until_bit_is_set( MS_CLOCK_PIN, MS_CLOCK_BIT );
 
-	// 10. Wait for the device to bring Data low.
-	// ACK from Keyboard.
-	loop_until_bit_is_clear( KB_DATA_PIN, KB_DATA_BIT );
+    // 10. Wait for the device to bring Data low.
+    // ACK from Keyboard.
+    loop_until_bit_is_clear( KB_DATA_PIN, KB_DATA_BIT );
 
-	// 11. Wait for the device to bring Clock  low.
-	loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
+    // 11. Wait for the device to bring Clock  low.
+    loop_until_bit_is_clear( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-	// Wait for the device to release Data and Clock.
-	// Bus is idle.
-	loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
+    // Wait for the device to release Data and Clock.
+    // Bus is idle.
+    loop_until_bit_is_set( KB_CLOCK_PIN, KB_CLOCK_BIT );
 
-	// It is critical to enable interrupts quickly after
-	// detecting idle condition otherwise first bit of
-	// ACK may be lost.
-	kb_clock_clear_interrupt( );
-	kb_clock_enable_interrupt( );
+    // It is critical to enable interrupts quickly after
+    // detecting idle condition otherwise first bit of
+    // ACK may be lost.
+    kb_clock_clear_interrupt( );
+    kb_clock_enable_interrupt( );
 }
 
 /*
@@ -372,49 +403,49 @@ static void KB_Send( uint8_t data )
  */
 ISR( KB_ClockInterrupt )
 {
-	// Start bit must be low.
-	if( kb_bit_n == 1 && bit_is_set( KB_DATA_PIN, KB_DATA_BIT ) )
-		goto abort;
+    // Start bit must be low.
+    if( kb_bit_n == 1 && bit_is_set( KB_DATA_PIN, KB_DATA_BIT ) )
+        goto abort;
 
-	// Read data bits and calculate parity.
-	else if( kb_bit_n >= 2 && kb_bit_n <= 9 )
-	{
-		if( bit_is_set( KB_DATA_PIN, KB_DATA_BIT ) )
-			kb_buffer |= ( 1 << (kb_bit_n - 2 ) );
-	}
+    // Read data bits and calculate parity.
+    else if( kb_bit_n >= 2 && kb_bit_n <= 9 )
+    {
+        if( bit_is_set( KB_DATA_PIN, KB_DATA_BIT ) )
+            kb_buffer |= ( 1 << (kb_bit_n - 2 ) );
+    }
 
-	// Check parity. Ask for re-send if this byte is corrupt.
-	else if( kb_bit_n == 10 )
-	{
-		if( bit_is_set( KB_DATA_PIN, KB_DATA_BIT )== parity_even_bit( kb_buffer ) )
-		{
-			if( kb_error == 0 )
-				KB_Send( 0xFE );
-			kb_error = 1;
-			goto abort;
-		}
-	}
+    // Check parity. Ask for re-send if this byte is corrupt.
+    else if( kb_bit_n == 10 )
+    {
+        if( bit_is_set( KB_DATA_PIN, KB_DATA_BIT )== parity_even_bit( kb_buffer ) )
+        {
+            if( kb_error == 0 )
+                KB_Send( 0xFE );
+            kb_error = 1;
+            goto abort;
+        }
+    }
 
-	// Check for stop bit high and queue byte if everything is ok.
-	else if( kb_bit_n == 11 )
-	{
-		if( bit_is_clear( KB_DATA_PIN, KB_DATA_BIT ) )
-		{
-			if( kb_error == 0 )
-				KB_Send( 0xFE );
-			kb_error = 1;
-			goto abort;
-		}
-		else
-		{
-			RING_AddElement( &kb_ringbuffer, kb_buffer );
-		}
-		kb_buffer = 0;
-		kb_bit_n = 0;
-		kb_error = 0;
-	}
-	kb_bit_n++;
+    // Check for stop bit high and queue byte if everything is ok.
+    else if( kb_bit_n == 11 )
+    {
+        if( bit_is_clear( KB_DATA_PIN, KB_DATA_BIT ) )
+        {
+            if( kb_error == 0 )
+                KB_Send( 0xFE );
+            kb_error = 1;
+            goto abort;
+        }
+        else
+        {
+            RING_AddElement( &kb_ringbuffer, kb_buffer );
+        }
+        kb_buffer = 0;
+        kb_bit_n = 0;
+        kb_error = 0;
+    }
+    kb_bit_n++;
 
 abort:
-	asm volatile ("nop"::);
+    asm volatile ("nop"::);
 }
