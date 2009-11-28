@@ -64,6 +64,8 @@ PG3B has a surprisingly small number of functional blocks but it allows full con
 
 The PG3B circuit has an AT90USB646 AVR micro-controller with 64512 bytes of flash memory for your code, 4096 bytes of RAM for program variables, and 2048 bytes of EEPROM to store configuration data. This is small compared to the resources available to a PC but plenty to run the USB port and drivers for up to sixteen input devices.
 
+ The following paragraphs describe PG3B support for the XBox 360 Wired Common Line controller architecture. Wireless controller architectures are also supported. The description for Wireless Common Ground is similar but has small differences that are not described.
+
 The core provides 5v from the USB connector to the rest of the circuit. This means the Digital Output from the core is 0v for Off and 5V for On. A voltage divider translates this into the voltage levels required by the XBox 360 Wired Controller; button pressed is translated into 1.8v and button released is 0v. The PG3B circuit has a digital connection to each of the XBox 360 buttons.
 
 There's a PG3B XBox360 Driver running on the core that allows an application to select a button and to make the button state pressed, or released. When a button is pressed the Digital Output for that button is set to "high", so the voltage is raised to 5v. The voltage divider converts the level to 1.8v, as expected by the controller, which causes the XBox 360 controller to think that the physical button is pressed.
