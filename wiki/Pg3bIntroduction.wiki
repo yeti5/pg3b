@@ -6,7 +6,7 @@ PG3B is a hardware circuit and several layered software modules that provide eve
 
 = Details =
 
-SOFTWARE
+===SOFTWARE===
 
 Application modules are assembled like building blocks to make the perfect controller for your game. The system is completely open and ready to meet your needs. Example applications under development include XBoxMouse, XBoxKeyboard, XBoxRapidFire, and Machine Vision Targeting.
 
@@ -14,7 +14,7 @@ The Driver layer is similar to the Microsoft XNA 3.0 Game Studio API.Unlike XNA 
 
 The Physical layer establishes a communications channel with the PG3B circuit board. This module is managed by the driver layer so you don't need to worry about low level communications details.
 
-HARDWARE
+===HARDWARE===
 
 PG3B has a surprisingly small number of functional blocks but it allows full control of XBox 360 Wired and Wireless controllers. The core of the system is a complete USB-based micro-controller development system. It has a lot of power packed into a very small footprint! All programming is done via the USB port. No special programmer is needed, only a standard "Mini-B" USB cable and a PC  with a USB port.
 
