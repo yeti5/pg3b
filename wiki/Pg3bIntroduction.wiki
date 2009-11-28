@@ -3,7 +3,7 @@
 
 = Introduction =
 
-PG3B is a hardware circuit and layered software modules that provide everything from low level XBox 360 control to sophisticated applications that integrate and enhance your favorite gaming devices including Arcade, Mouse, Keyboard, and Joystick peripherals.
+PG3B is a hardware circuit and software modules that provide everything from low level XBox 360 control to sophisticated applications that integrate and enhance your favorite gaming devices including Arcade, Mouse, Keyboard, and Joystick peripherals.
 
 = Details =
 
