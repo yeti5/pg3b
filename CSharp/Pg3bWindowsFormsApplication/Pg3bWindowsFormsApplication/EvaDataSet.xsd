@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EvaDataSet" targetNamespace="http://tempuri.org/EvaDataSet.xsd" xmlns:mstns="http://tempuri.org/EvaDataSet.xsd" xmlns="http://tempuri.org/EvaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EvaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EvaDataSet" msprop:Generator_DataSetName="EvaDataSet" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Device" msprop:Generator_UserTableName="Device" msprop:Generator_RowDeletedName="DeviceRowDeleted" msprop:Generator_RowChangedName="DeviceRowChanged" msprop:Generator_RowClassName="DeviceRow" msprop:Generator_RowChangingName="DeviceRowChanging" msprop:Generator_RowEvArgName="DeviceRowChangeEvent" msprop:Generator_RowEvHandlerName="DeviceRowChangeEventHandler" msprop:Generator_TableClassName="DeviceDataTable" msprop:Generator_TableVarName="tableDevice" msprop:Generator_RowDeletingName="DeviceRowDeleting" msprop:Generator_TablePropName="Device">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DeviceEnum" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="DeviceEnum" msprop:Generator_ColumnPropNameInRow="DeviceEnum" msprop:Generator_ColumnVarNameInTable="columnDeviceEnum" msprop:Generator_ColumnPropNameInTable="DeviceEnumColumn" type="xs:int" />
+              <xs:element name="DeviceCode" msdata:ReadOnly="true" msdata:Expression="DeviceEnum * 4096" msprop:Generator_UserColumnName="DeviceCode" msprop:Generator_ColumnPropNameInRow="DeviceCode" msprop:Generator_ColumnVarNameInTable="columnDeviceCode" msprop:Generator_ColumnPropNameInTable="DeviceCodeColumn" type="xs:int" />
+              <xs:element name="DeviceName" msprop:Generator_UserColumnName="DeviceName" msprop:Generator_ColumnPropNameInRow="DeviceName" msprop:Generator_ColumnVarNameInTable="columnDeviceName" msprop:Generator_ColumnPropNameInTable="DeviceNameColumn" type="xs:string" />
+              <xs:element name="DeviceFullName" msdata:ReadOnly="true" msdata:Expression="DeviceName" msprop:Generator_UserColumnName="DeviceFullName" msprop:Generator_ColumnPropNameInRow="DeviceFullName" msprop:Generator_ColumnVarNameInTable="columnDeviceFullName" msprop:Generator_ColumnPropNameInTable="DeviceFullNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EventTrigger" msprop:Generator_UserTableName="EventTrigger" msprop:Generator_RowDeletedName="EventTriggerRowDeleted" msprop:Generator_RowChangedName="EventTriggerRowChanged" msprop:Generator_RowClassName="EventTriggerRow" msprop:Generator_RowChangingName="EventTriggerRowChanging" msprop:Generator_RowEvArgName="EventTriggerRowChangeEvent" msprop:Generator_RowEvHandlerName="EventTriggerRowChangeEventHandler" msprop:Generator_TableClassName="EventTriggerDataTable" msprop:Generator_TableVarName="tableEventTrigger" msprop:Generator_RowDeletingName="EventTriggerRowDeleting" msprop:Generator_TablePropName="EventTrigger" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <msdata:Relationship name="Device_EventTrigger" msdata:parent="Device" msdata:child="EventTrigger" msdata:parentkey="DeviceCode" msdata:childkey="DeviceCode" msprop:Generator_UserRelationName="Device_EventTrigger" msprop:Generator_RelationVarName="relationDevice_EventTrigger" msprop:Generator_UserChildTable="EventTrigger" msprop:Generator_UserParentTable="Device" msprop:Generator_ParentPropName="DeviceRow" msprop:Generator_ChildPropName="GetEventTriggerRows" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DeviceCode" msprop:Generator_UserColumnName="DeviceCode" msprop:Generator_ColumnVarNameInTable="columnDeviceCode" msprop:Generator_ColumnPropNameInRow="DeviceCode" msprop:Generator_ColumnPropNameInTable="DeviceCodeColumn" type="xs:int" />
+                    <xs:element name="TriggerEnum" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="TriggerEnum" msprop:Generator_ColumnVarNameInTable="columnTriggerEnum" msprop:Generator_ColumnPropNameInRow="TriggerEnum" msprop:Generator_ColumnPropNameInTable="TriggerEnumColumn" type="xs:int" />
+                    <xs:element name="TriggerCode" msdata:ReadOnly="true" msdata:Expression="DeviceCode + TriggerEnum * 256" msprop:Generator_UserColumnName="TriggerCode" msprop:Generator_ColumnVarNameInTable="columnTriggerCode" msprop:Generator_ColumnPropNameInRow="TriggerCode" msprop:Generator_ColumnPropNameInTable="TriggerCodeColumn" type="xs:int" minOccurs="0" />
+                    <xs:element name="TriggerName" msprop:Generator_UserColumnName="TriggerName" msprop:Generator_ColumnVarNameInTable="columnTriggerName" msprop:Generator_ColumnPropNameInRow="TriggerName" msprop:Generator_ColumnPropNameInTable="TriggerNameColumn" type="xs:string" />
+                    <xs:element name="TriggerFullName" msdata:ReadOnly="true" msdata:Expression="Parent.DeviceFullName+' &gt; ' + TriggerName" msprop:Generator_UserColumnName="TriggerFullName" msprop:Generator_ColumnPropNameInRow="TriggerFullName" msprop:Generator_ColumnVarNameInTable="columnTriggerFullName" msprop:Generator_ColumnPropNameInTable="TriggerFullNameColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="EventValue" msprop:Generator_UserTableName="EventValue" msprop:Generator_RowDeletedName="EventValueRowDeleted" msprop:Generator_RowChangedName="EventValueRowChanged" msprop:Generator_RowClassName="EventValueRow" msprop:Generator_RowChangingName="EventValueRowChanging" msprop:Generator_RowEvArgName="EventValueRowChangeEvent" msprop:Generator_RowEvHandlerName="EventValueRowChangeEventHandler" msprop:Generator_TableClassName="EventValueDataTable" msprop:Generator_TableVarName="tableEventValue" msprop:Generator_RowDeletingName="EventValueRowDeleting" msprop:Generator_TablePropName="EventValue" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:appinfo>
+                          <msdata:Relationship name="EventTrigger_EventValue" msdata:parent="EventTrigger" msdata:child="EventValue" msdata:parentkey="TriggerCode" msdata:childkey="TriggerCode" msprop:Generator_UserRelationName="EventTrigger_EventValue" msprop:Generator_RelationVarName="relationEventTrigger_EventValue" msprop:Generator_UserChildTable="EventValue" msprop:Generator_UserParentTable="EventTrigger" msprop:Generator_ParentPropName="EventTriggerRow" msprop:Generator_ChildPropName="GetEventValueRows" />
+                        </xs:appinfo>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TriggerCode" msprop:Generator_UserColumnName="TriggerCode" msprop:Generator_ColumnVarNameInTable="columnTriggerCode" msprop:Generator_ColumnPropNameInRow="TriggerCode" msprop:Generator_ColumnPropNameInTable="TriggerCodeColumn" type="xs:int" />
+                          <xs:element name="ValueEnum" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ValueEnum" msprop:Generator_ColumnVarNameInTable="columnValueEnum" msprop:Generator_ColumnPropNameInRow="ValueEnum" msprop:Generator_ColumnPropNameInTable="ValueEnumColumn" type="xs:int" />
+                          <xs:element name="ValueCode" msdata:ReadOnly="true" msdata:Expression="TriggerCode + ValueEnum" msprop:Generator_UserColumnName="ValueCode" msprop:Generator_ColumnVarNameInTable="columnValueCode" msprop:Generator_ColumnPropNameInRow="ValueCode" msprop:Generator_ColumnPropNameInTable="ValueCodeColumn" type="xs:int" />
+                          <xs:element name="ValueName" msprop:Generator_UserColumnName="ValueName" msprop:Generator_ColumnVarNameInTable="columnValueName" msprop:Generator_ColumnPropNameInRow="ValueName" msprop:Generator_ColumnPropNameInTable="ValueNameColumn" type="xs:string" />
+                          <xs:element name="ValueFullName" msdata:ReadOnly="true" msdata:Expression="Parent.TriggerFullName + ' &gt; ' + ValueName" msprop:Generator_UserColumnName="ValueFullName" msprop:Generator_ColumnPropNameInRow="ValueFullName" msprop:Generator_ColumnVarNameInTable="columnValueFullName" msprop:Generator_ColumnPropNameInTable="ValueFullNameColumn" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ActionTarget" msprop:Generator_UserTableName="ActionTarget" msprop:Generator_RowDeletedName="ActionTargetRowDeleted" msprop:Generator_RowChangedName="ActionTargetRowChanged" msprop:Generator_RowClassName="ActionTargetRow" msprop:Generator_RowChangingName="ActionTargetRowChanging" msprop:Generator_RowEvArgName="ActionTargetRowChangeEvent" msprop:Generator_RowEvHandlerName="ActionTargetRowChangeEventHandler" msprop:Generator_TableClassName="ActionTargetDataTable" msprop:Generator_TableVarName="tableActionTarget" msprop:Generator_RowDeletingName="ActionTargetRowDeleting" msprop:Generator_TablePropName="ActionTarget" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <msdata:Relationship name="Device_ActionTarget" msdata:parent="Device" msdata:child="ActionTarget" msdata:parentkey="DeviceCode" msdata:childkey="DeviceCode" msprop:Generator_UserRelationName="Device_ActionTarget" msprop:Generator_RelationVarName="relationDevice_ActionTarget" msprop:Generator_UserChildTable="ActionTarget" msprop:Generator_UserParentTable="Device" msprop:Generator_ParentPropName="DeviceRow" msprop:Generator_ChildPropName="GetActionTargetRows" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DeviceCode" msprop:Generator_UserColumnName="DeviceCode" msprop:Generator_ColumnVarNameInTable="columnDeviceCode" msprop:Generator_ColumnPropNameInRow="DeviceCode" msprop:Generator_ColumnPropNameInTable="DeviceCodeColumn" type="xs:int" />
+                    <xs:element name="TargetEnum" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="TargetEnum" msprop:Generator_ColumnVarNameInTable="columnTargetEnum" msprop:Generator_ColumnPropNameInRow="TargetEnum" msprop:Generator_ColumnPropNameInTable="TargetEnumColumn" type="xs:int" />
+                    <xs:element name="TargetCode" msdata:ReadOnly="true" msdata:Expression="DeviceCode + TargetEnum * 256" msprop:Generator_UserColumnName="TargetCode" msprop:Generator_ColumnVarNameInTable="columnTargetCode" msprop:Generator_ColumnPropNameInRow="TargetCode" msprop:Generator_ColumnPropNameInTable="TargetCodeColumn" type="xs:int" minOccurs="0" />
+                    <xs:element name="TargetName" msprop:Generator_UserColumnName="TargetName" msprop:Generator_ColumnVarNameInTable="columnTargetName" msprop:Generator_ColumnPropNameInRow="TargetName" msprop:Generator_ColumnPropNameInTable="TargetNameColumn" type="xs:string" />
+                    <xs:element name="TargetFullName" msdata:ReadOnly="true" msdata:Expression="Parent.DeviceFullName + ' &gt; ' + TargetName" msprop:Generator_UserColumnName="TargetFullName" msprop:Generator_ColumnPropNameInRow="TargetFullName" msprop:Generator_ColumnVarNameInTable="columnTargetFullName" msprop:Generator_ColumnPropNameInTable="TargetFullNameColumn" type="xs:string" minOccurs="0" />
+                    <xs:element name="ActionValue" msprop:Generator_UserTableName="ActionValue" msprop:Generator_RowDeletedName="ActionValueRowDeleted" msprop:Generator_RowChangedName="ActionValueRowChanged" msprop:Generator_RowClassName="ActionValueRow" msprop:Generator_RowChangingName="ActionValueRowChanging" msprop:Generator_RowEvArgName="ActionValueRowChangeEvent" msprop:Generator_RowEvHandlerName="ActionValueRowChangeEventHandler" msprop:Generator_TableClassName="ActionValueDataTable" msprop:Generator_TableVarName="tableActionValue" msprop:Generator_RowDeletingName="ActionValueRowDeleting" msprop:Generator_TablePropName="ActionValue" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:appinfo>
+                          <msdata:Relationship name="ActionTarget_ActionValue" msdata:parent="ActionTarget" msdata:child="ActionValue" msdata:parentkey="TargetCode" msdata:childkey="TargetCode" msprop:Generator_UserRelationName="ActionTarget_ActionValue" msprop:Generator_RelationVarName="relationActionTarget_ActionValue" msprop:Generator_UserChildTable="ActionValue" msprop:Generator_UserParentTable="ActionTarget" msprop:Generator_ParentPropName="ActionTargetRow" msprop:Generator_ChildPropName="GetActionValueRows" />
+                        </xs:appinfo>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TargetCode" msprop:Generator_UserColumnName="TargetCode" msprop:Generator_ColumnVarNameInTable="columnTargetCode" msprop:Generator_ColumnPropNameInRow="TargetCode" msprop:Generator_ColumnPropNameInTable="TargetCodeColumn" type="xs:int" />
+                          <xs:element name="ValueEnum" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ValueEnum" msprop:Generator_ColumnVarNameInTable="columnValueEnum" msprop:Generator_ColumnPropNameInRow="ValueEnum" msprop:Generator_ColumnPropNameInTable="ValueEnumColumn" type="xs:int" />
+                          <xs:element name="ValueCode" msdata:ReadOnly="true" msdata:Expression="TargetCode + ValueEnum" msprop:Generator_UserColumnName="ValueCode" msprop:Generator_ColumnVarNameInTable="columnValueCode" msprop:Generator_ColumnPropNameInRow="ValueCode" msprop:Generator_ColumnPropNameInTable="ValueCodeColumn" type="xs:int" />
+                          <xs:element name="ValueName" msprop:Generator_UserColumnName="ValueName" msprop:Generator_ColumnVarNameInTable="columnValueName" msprop:Generator_ColumnPropNameInRow="ValueName" msprop:Generator_ColumnPropNameInTable="ValueNameColumn" type="xs:string" />
+                          <xs:element name="ValueFullName" msdata:ReadOnly="true" msdata:Expression="Parent.TargetFullName + ' &gt; ' + ValueName" msprop:Generator_UserColumnName="ValueFullName" msprop:Generator_ColumnPropNameInRow="ValueFullName" msprop:Generator_ColumnVarNameInTable="columnValueFullName" msprop:Generator_ColumnPropNameInTable="ValueFullNameColumn" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Eva" msprop:Generator_UserTableName="Eva" msprop:Generator_RowDeletedName="EvaRowDeleted" msprop:Generator_RowChangedName="EvaRowChanged" msprop:Generator_RowClassName="EvaRow" msprop:Generator_RowChangingName="EvaRowChanging" msprop:Generator_RowEvArgName="EvaRowChangeEvent" msprop:Generator_RowEvHandlerName="EvaRowChangeEventHandler" msprop:Generator_TableClassName="EvaDataTable" msprop:Generator_TableVarName="tableEva" msprop:Generator_RowDeletingName="EvaRowDeleting" msprop:Generator_TablePropName="Eva">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventCode" msprop:Generator_UserColumnName="EventCode" msprop:Generator_ColumnVarNameInTable="columnEventCode" msprop:Generator_ColumnPropNameInRow="EventCode" msprop:Generator_ColumnPropNameInTable="EventCodeColumn" type="xs:int" />
+              <xs:element name="ActionCode" msprop:Generator_UserColumnName="ActionCode" msprop:Generator_ColumnVarNameInTable="columnActionCode" msprop:Generator_ColumnPropNameInRow="ActionCode" msprop:Generator_ColumnPropNameInTable="ActionCodeColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="EventValue_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EventValue" />
+      <xs:field xpath="mstns:TriggerCode" />
+      <xs:field xpath="mstns:ValueEnum" />
+    </xs:unique>
+    <xs:unique name="EventTrigger_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EventTrigger" />
+      <xs:field xpath="mstns:DeviceCode" />
+      <xs:field xpath="mstns:TriggerEnum" />
+    </xs:unique>
+    <xs:unique name="ActionValue_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActionValue" />
+      <xs:field xpath="mstns:TargetCode" />
+      <xs:field xpath="mstns:ValueEnum" />
+    </xs:unique>
+    <xs:unique name="ActionTarget_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ActionTarget" />
+      <xs:field xpath="mstns:DeviceCode" />
+      <xs:field xpath="mstns:TargetEnum" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Device" />
+      <xs:field xpath="mstns:DeviceEnum" />
+    </xs:unique>
+    <xs:unique name="Eva_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Eva" />
+      <xs:field xpath="mstns:EventCode" />
+      <xs:field xpath="mstns:ActionCode" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="EventValue_Eva" msdata:parent="EventValue" msdata:child="Eva" msdata:parentkey="ValueCode" msdata:childkey="EventCode" msprop:Generator_UserRelationName="EventValue_Eva" msprop:Generator_RelationVarName="relationEventValue_Eva" msprop:Generator_UserChildTable="Eva" msprop:Generator_UserParentTable="EventValue" msprop:Generator_ParentPropName="EventValueRow" msprop:Generator_ChildPropName="GetEvaRows" />
+      <msdata:Relationship name="ActionValue_Eva" msdata:parent="ActionValue" msdata:child="Eva" msdata:parentkey="ValueCode" msdata:childkey="ActionCode" msprop:Generator_UserRelationName="ActionValue_Eva" msprop:Generator_RelationVarName="relationActionValue_Eva" msprop:Generator_UserChildTable="Eva" msprop:Generator_UserParentTable="ActionValue" msprop:Generator_ParentPropName="ActionValueRow" msprop:Generator_ChildPropName="GetEvaRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
