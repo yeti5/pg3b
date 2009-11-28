@@ -11,7 +11,7 @@ PG3B is a hardware circuit and software modules that provide everything from low
 
 Application modules are assembled like building blocks to make the perfect controller for your game. The system is completely open and ready to meet your needs. Example applications under development include XBoxMouse, XBoxKeyboard, XBoxRapidFire, and Machine Vision Targeting. These are standalone applications written in Java or C#.
 
-<img width="600" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BDevelopmentSoftware-1.png" alt="PG3B Development Environment" />
+<img width="600" align ="center" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BDevelopmentSoftware-1.png" alt="PG3B Development Environment" />
 
 The Driver layer is similar to the Microsoft XNA 3.0 Game Studio API. Unlike XNA the values are writable because they send GamePad instructions to the XBox 360 game console. The Driver layer is available for Java and C# development environments.
 
@@ -55,16 +55,15 @@ This example shows squeezing the Left Trigger rapidly ten times in a row.
 
 Controlling the XBox 360 from your computer is really easy. All of the development tools are free including the development environment. Microsoft, for example, allows you to download and use Visual Studio 2008 and XNA 3.0 at no cost. The PG3B development platform is open source which means you can freely access the hardware and software for your needs.
 
-
 ===HARDWARE===
 
 PG3B has a surprisingly small number of functional blocks but it allows full control of XBox 360 Wired and Wireless controllers. The core of the system is a complete USB-based micro-controller development system. It has a lot of power packed into a very small footprint! All programming is done via the USB port. No special programmer is needed, only a standard "Mini-B" USB cable and a PC  with a USB port.
 
-<img width="600" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BPrototypeII-1.png" alt="PG3B Prototype II" />
+<img width="600" align ="center" src="http://i711.photobucket.com/albums/ww111/rjburke377/IRobot/PG3BPrototypeII-1.png" alt="PG3B Prototype II" />
 
 The PG3B circuit has an AT90USB646 AVR micro-controller with 64512 bytes of flash memory for your code, 4096 bytes of RAM for program variables, and 2048 bytes of EEPROM to store configuration data. This is small compared to the resources available to a PC but plenty to run the USB port and drivers for up to sixteen input devices.
 
- The following paragraphs describe PG3B support for the XBox 360 Wired Common Line controller architecture. Wireless controller architecture is supported too. The description for Wireless is similar but has a few minor differences that are not described in the following text.
+ The following paragraphs describe PG3B support for the XBox 360 Wired Common Line controller architecture. Wireless controller architectures are supported too. The description for Wireless is similar but has a few minor differences that are not described in the following text.
 
 The core provides 5v from the USB connector to the rest of the circuit. This means the Digital Output from the core is 0v for Off and 5V for On. A voltage divider translates this into the voltage levels required by the XBox 360 Wired Controller; button pressed is translated into 1.8v and button released is 0v. The PG3B circuit has a digital connection to each of the XBox 360 buttons.
 
