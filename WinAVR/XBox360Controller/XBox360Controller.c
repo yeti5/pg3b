@@ -81,7 +81,7 @@ system_t Configuration;
 static void DoWhileIdle( void )
 {
     KB_EventTask( );
-//  MS_EventTask( );
+    MS_EventTask( );
 }
 
 /*
