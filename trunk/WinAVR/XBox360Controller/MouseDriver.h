@@ -176,6 +176,7 @@ typedef struct _filter
     uint8_t state;
     uint8_t retry;
     uint8_t size;
+    uint8_t selftest;
     uint8_t *table;
 } filter_t;
 
