@@ -1,7 +1,5 @@
 /*
  ********************************************************************************
- * SerialPeripheral.c
- *
  * Copyright (c) 2009 Richard Burke
  * All rights reserved.
  *
@@ -45,131 +43,128 @@
 /*
  ********************************************************************************
  * Configure the chip select lines for MCP42010 A, B, C to output high. The common
- * reset line is configured as an output and toggled low for 500 nS. The Reset pin
+ * reset line is configured as an output and toggled low for 500 us. The Reset pin
  * will set all potentiometers to mid-scale (Code 80h).
  ********************************************************************************
  */
 void SPI_InitMCP42010( void )
 {
-	// Set-up SPI SS Pins for MCP42010 A, B, C
-	sbi( PORTB, PB4 );		// Set SS MCP42010 A High.
-	sbi( PORTB, PB5 );		// Set SS MCP42010 B High.
-	sbi( PORTB, PB6 );		// Set SS MCP42010 C High.
-	sbi( DDRB, PB4 );		// SS output for MCP42010 A
-	sbi( DDRB, PB5 );		// SS output for MCP42010 B
-	sbi( DDRB, PB6 );		// SS output for MCP42010 C
+    // Set-up SPI SS Pins for MCP42010 A, B, C
+    sbi( PORTB, PB4 );      // Set SS MCP42010 A High.
+    sbi( PORTB, PB5 );      // Set SS MCP42010 B High.
+    sbi( PORTB, PB6 );      // Set SS MCP42010 C High.
+    sbi( DDRB, PB4 );       // SS output for MCP42010 A
+    sbi( DDRB, PB5 );       // SS output for MCP42010 B
+    sbi( DDRB, PB6 );       // SS output for MCP42010 C
 
-	// Set common reset signal for MCP42010 A, B, C to high.
-	sbi( PORTB, PB7 );		// Set slave reset to high
-	sbi( DDRB, PB7 );		// Set slave reset as output for MCP42010 A, B, C
+    // Set common reset signal for MCP42010 A, B, C to high.
+    sbi( PORTB, PB7 );      // Set slave reset to high
+    sbi( DDRB, PB7 );       // Set slave reset as output for MCP42010 A, B, C
 
-	// Pull the reset line low for at least 150 nS
-	cbi( PORTB, PB7 );		// Reset slave MCP42010 A, B, C. All potentiometers to mid-scale.
-	_delay_us( 5 );			// Reset for 200 nS
-	sbi( PORTB, PB7 );
+    // Pull the reset line low for at least 150 ns
+    cbi( PORTB, PB7 );      // Reset slave MCP42010 A, B, C. All potentiometers to mid-scale.
+    _delay_us( 5 );         // Reset for 500 us
+    sbi( PORTB, PB7 );
 }
 
 /*
  ********************************************************************************
- *
+ * SPI_InitMaster
  ********************************************************************************
  */
 void SPI_InitMaster( void )
 {
-	// Setup output buffer for interrupt service routine
-//	BUF16_Init( &SPI_WordBuffer );
+    // Set-up SPI I/O pins
+    sbi( PORTB, PB1 );      // set SCK High
+    sbi( PORTB, PB0 );      // Set SS High
 
-	// Set-up SPI I/O pins
-	sbi( PORTB, PB1 );		// set SCK High
-	sbi( PORTB, PB0 );		// Set SS High
+    sbi( DDRB, PB1 );       // set SCK as output
+    cbi( DDRB, PB3 );       // set MISO as input
+    sbi( DDRB, PB2 );       // set MOSI as output
+    sbi( DDRB, PB0 );       // set SS to output for Master Mode
 
-	sbi( DDRB, PB1 );		// set SCK as output
-	cbi( DDRB, PB3 );		// set MISO as input
-	sbi( DDRB, PB2 );		// set MOSI as output
-	sbi( DDRB, PB0 );		// set SS to output for Master Mode
+    // setup SPI interface
+    cbi( PRR0, PRSPI );
 
-	// setup SPI interface
-	cbi( PRR0, PRSPI );
-	
-	// master mode
-	sbi( SPCR, MSTR );
+    // master mode
+    sbi( SPCR, MSTR );
 
-	// clock = fosc/2
-	cbi( SPCR, SPI2X );
-	cbi( SPCR, SPR0 );
-	cbi( SPCR, SPR1 );
+    // clock = fosc/2
+    cbi( SPCR, SPI2X );
+    cbi( SPCR, SPR0 );
+    cbi( SPCR, SPR1 );
 
-	// Sample (Rising), Setup (Falling), SPI Mode 0
-	cbi( SPCR, CPOL );
-	cbi( SPCR, CPHA );
+    // Sample (Rising), Setup (Falling), SPI Mode 0
+    cbi( SPCR, CPOL );
+    cbi( SPCR, CPHA );
 
-	// Data order MSB first
-	cbi( SPCR, DORD );
+    // Data order MSB first
+    cbi( SPCR, DORD );
 
-	// enable SPI
-	sbi( SPCR, SPE );
-	
-	// clear status
-	inb( SPSR );
+    // enable SPI
+    sbi( SPCR, SPE );
+
+    // clear status
+    inb( SPSR );
 }
 
 /*
  ********************************************************************************
- *
+ * SPI_TransferBits
  ********************************************************************************
  */
 uint8_t SPI_TransferBits( uint8_t bit, uint8_t data )
 {
-	// send the given data
-	SPDR = data;
+    // send the given data
+    SPDR = data;
 
-	// wait for transfer to complete
-	while( ! ( SPSR & ( 1 << SPIF ) ) )
-		;
+    // wait for transfer to complete
+    while( ! ( SPSR & ( 1 << SPIF ) ) )
+        ;
 
-	// Return the reply
-	return SPDR;
-}
-
- /*
- ********************************************************************************
- *
- ********************************************************************************
- */
-uint8_t SPI_TransferByte( uint8_t bit, uint8_t txdata )
-{
-	uint8_t rxdata = 0;
-	
-	// Select slave
-	cbi( PORTB, bit );	// Set SS Low.
-	_delay_us( 12 );
-
-	rxdata = SPI_TransferBits( bit, txdata );
-
-	sbi( PORTB, bit );	// Set SS High.
-	_delay_us( 12 );
-
-	// Return the reply
-	return rxdata;
+    // Return the reply
+    return SPDR;
 }
 
 /*
  ********************************************************************************
- *
+ * SPI_TransferByte
+ ********************************************************************************
+ */
+uint8_t SPI_TransferByte( uint8_t bit, uint8_t txdata )
+{
+    uint8_t rxdata = 0;
+
+    // Select slave
+    cbi( PORTB, bit );	// Set SS Low.
+    _delay_us( 12 );
+
+    rxdata = SPI_TransferBits( bit, txdata );
+
+    sbi( PORTB, bit );	// Set SS High.
+    _delay_us( 12 );
+
+    // Return the reply
+    return rxdata;
+}
+
+/*
+ ********************************************************************************
+ * SPI_TransferBytes
  ********************************************************************************
  */
 void SPI_TransferBytes( uint8_t bit, uint8_t byte0, uint8_t byte1 )
 {
-	// Select slave
-	cbi( PORTB, bit );	// Set SS Low.
-	_delay_us( 2 );
+    // Select slave
+    cbi( PORTB, bit );  // Set SS Low.
+    _delay_us( 2 );
 
-	// send MS byte of given data
-	SPI_TransferBits( bit, byte0 );
+    // send MS byte of given data
+    SPI_TransferBits( bit, byte0 );
 
-	// send LS byte of given data
-	SPI_TransferBits( bit, byte1 );
+    // send LS byte of given data
+    SPI_TransferBits( bit, byte1 );
 
-	sbi( PORTB, bit );	// Set SS High.
-	_delay_us( 2 );
+    sbi( PORTB, bit );	// Set SS High.
+    _delay_us( 2 );
 }
