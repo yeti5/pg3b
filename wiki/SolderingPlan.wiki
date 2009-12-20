@@ -3,7 +3,7 @@
 
 = Introduction =
 
-The following diagrams show the steps required to assemble a PG3B Prototype II circuit board. The parts are listed in the PG3B Prototype II : Bill Of Materials
+The following diagrams show the steps required to assemble a PG3B Prototype II circuit board. The parts are listed in the PG3B Prototype II : Bill Of Materials.
 
 = Details =
 
