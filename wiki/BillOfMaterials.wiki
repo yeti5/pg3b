@@ -1,4 +1,5 @@
 #summary List of parts required to build PG3B Prototype II
+#labels Featured
 
 = Introduction =
 
