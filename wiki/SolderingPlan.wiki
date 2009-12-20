@@ -11,4 +11,12 @@ There are four parts to the assembly instructions. The first part lists the step
 
 [http://pg3b.googlecode.com/svn/wiki/SolderingPlanPart1of4.jpg]
 
+Having followed the soldering plan Part I and Part II, the bottom of the board should look as follows:
+
+[http://pg3b.googlecode.com/svn/wiki/Prototype2Bottom.jpg]
+
+Notice that the solder joints are shiny and conical. This is how your solder joints should appear. If any are dull then re-heat the joint, adding a bit of flux and a very small amount of solder.
+
+[http://pg3b.googlecode.com/svn/wiki/Prototype2Top.jpg]
+
 In Progress ....
