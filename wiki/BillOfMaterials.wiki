@@ -7,7 +7,7 @@ Bill Of Materials : PG3B Prototype II
 
 = Details =
 
-These costs represent out of pocket expenses including taxes and pro-rated shipping. For some parts, ordered in low quantity, shipping and handling can be more than the components themselves.
+Costs are out of pocket expenses including taxes and pro-rated shipping. For some parts, ordered in low quantity, shipping and handling can be more than the components themselves.
 
 This list does not include the wired controller, 5V power supply, solder, flux, wire, etc. Expect to budget US$100 - US$110 for a complete build.
 
