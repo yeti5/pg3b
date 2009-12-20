@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary List of parts required to build PG3B Prototype II
 
 = Introduction =
 
