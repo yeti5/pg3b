@@ -1,5 +1,5 @@
+#summary The following is a brief software and hardware summary of the PG3B platform
 #labels Featured
-# The following is a brief software and hardware summary of the PG3B platform
 
 = Introduction =
 
