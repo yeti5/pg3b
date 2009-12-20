@@ -1,0 +1,14 @@
+#summary PG3B Prototype II Soldering Plan
+#labels Featured
+
+= Introduction =
+
+The following diagrams show the steps required to assemble a PG3B Prototype II circuit board. The parts are listed in the PG3B Prototype II : Bill Of Materials
+
+= Details =
+
+There are four parts to the assembly instructions. The first part lists the steps, 1 - 8, required to solder the circuit for XBox 360 analog controls. This part of the circuit is used by PG3B to manipulate Left and Right Thumbsticks, and Left and Right Triggers.
+
+[http://pg3b.googlecode.com/svn/wiki/SolderingPlanPart1of4.jpg]
+
+In Progress ....
