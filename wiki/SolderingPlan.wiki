@@ -13,7 +13,7 @@ This part of the circuit is used by PG3B to manipulate Left and Right Thumbstick
 
 [http://pg3b.googlecode.com/svn/wiki/SolderingPlanPart1of4.jpg]
 
-
+Working from left to right solder the eight resistors, the socketed resistor network, and the last seven resistors. The resistor network and the socket are not required for the Wireless controller.
 
 [http://pg3b.googlecode.com/svn/wiki/SolderingPlanPart2of4.jpg]
 
