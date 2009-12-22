@@ -7,9 +7,15 @@ The following diagrams show the steps required to assemble a PG3B Prototype II c
 
 = Details =
 
-There are four parts to the assembly instructions. The first part lists the steps, 1 - 8, required to solder the circuit for XBox 360 analog controls. This part of the circuit is used by PG3B to manipulate Left and Right Thumbsticks, and Left and Right Triggers.
+There are four parts to the assembly instructions. Part 1 lists the steps, 1 - 8, required to solder the circuit for XBox 360 analog controls. Part 2 shows steps 9 - 24. For a wired controller these components convert the 5.0V from the USB port to the 1.8V required by the digital buttons. The 2.7K common bus resistor network is not required by the Wireless controller and can be left unpopulated. Part 3 shows the Teensy++ module which is soldered to the bottom of the PG3B circuit. Finally, Part 4 shows the soldering and test plan for wiring the XBox 360 Wired and Wireless controllers.
+
+This part of the circuit is used by PG3B to manipulate Left and Right Thumbsticks, and Left and Right Triggers.
 
 [http://pg3b.googlecode.com/svn/wiki/SolderingPlanPart1of4.jpg]
+
+
+
+[http://pg3b.googlecode.com/svn/wiki/SolderingPlanPart2of4.jpg]
 
 Having followed the soldering plan Part I and Part II, the bottom of the board should look like this:
 
