@@ -8,6 +8,8 @@ The Controller application provides built-in support for scripting the PG3B and 
 
 _Tip: Press ctrl+space for code completion and ctrl+enter to quickly execute the current script._
 
+_Tip: Right click a script to jump to any config that uses that script._
+
 == The Language ==
 
 The scripting language used is called Pnuts. It is a JVM language, so it has access to all of Java and in addition to enhanced expressive power. The following links may provide useful:
