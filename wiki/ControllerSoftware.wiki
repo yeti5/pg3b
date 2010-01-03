@@ -1,4 +1,5 @@
 #summary Using the Controller software
+#labels Featured
 
 http://pg3b.googlecode.com/svn/wiki/controller/controller.jpg
 
