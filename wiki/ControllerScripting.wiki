@@ -13,7 +13,7 @@ _Tip: Right click a script to jump to any config that uses that script._
 
 == The Language ==
 
-The scripting language used is called Pnuts. It is a JVM language, so it has access to all of Java and in addition to enhanced expressive power. The following links may provide useful:
+The scripting language used is called Pnuts. It is a JVM language, so it has access to all of Java in addition to enhanced expressive power. The following links may provide useful:
 
   * [http://pnuts.org/articles/pnutsHighlights.html Quick language highlights]
   * [http://pnuts.org/1.2.1/snapshot/20070724/doc/ Official documentation]
