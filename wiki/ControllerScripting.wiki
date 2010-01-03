@@ -13,7 +13,7 @@ _Tip: Right click a script to jump to any config that uses that script._
 
 == The Language ==
 
-The scripting language used is called Pnuts. It is a JVM language, so it has access to all of Java in addition to enhanced expressive power. The following links may provide useful:
+The scripting language used is called Pnuts. It is a JVM language, so it has access to all of Java in addition to enhanced expressive power. The following links may prove useful:
 
   * [http://pnuts.org/articles/pnutsHighlights.html Quick language highlights]
   * [http://pnuts.org/1.2.1/snapshot/20070724/doc/ Official documentation]
@@ -38,7 +38,7 @@ After `activate`, a function named `continuous` is called in the script, if it e
 
 === Deactivate ===
 
-Once a trigger's payload becomes zero, the `continuous` is called one last time with a payload of zero, then a function named `deactivate` is called in the script, if it exists. This is a good place to put code you want to run when a button is released.
+Once a trigger's payload becomes zero, the `continuous` function is called one last time with a payload of zero, then a function named `deactivate` is called in the script, if it exists. This is a good place to put code you want to run when a button is released.
 
 == Payload ==
 
@@ -71,7 +71,7 @@ In addition, there are many utility functions that make common tasks easier:
   * `sleep` waits for a number of milliseconds.
   * `play` plays a tone.
   * `beep` plays a high or low tone. Useful for knowing if toggled setting is on or off.
-  * `interval` returns true only if X milliseconds have passed since it last returned true. Useful for executed code every X milliseconds without using a thread.
+  * `interval` returns true only if X milliseconds have passed since it last returned true. Useful to execute code every X milliseconds without using a thread.
   * `set` sets a global value. Useful to store a value between script executions or even between scripts.
   * `get` gets a global value.
   * `getConfig` looks up a config by name.
