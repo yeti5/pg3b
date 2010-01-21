@@ -18,7 +18,7 @@ The scripting language used is called Pnuts. It is a JVM language, so it has acc
   * [http://pnuts.org/articles/pnutsHighlights.html Quick language highlights]
   * [http://pnuts.org/1.2.1/snapshot/20070724/doc/ Official documentation]
 
-Pnuts syntax is straightforward and can be similar to Java if you choose. Semicolons are optional. Functions are declared with syntax similar to JavaScript. One unique feature Pnuts has is that curly braces are optional for functions containing a single statement.
+Pnuts syntax is straightforward and can be similar to Java if you choose. Semicolons are optional. Functions are declared with syntax similar to !JavaScript. One unique feature Pnuts has is that curly braces are optional for functions containing a single statement.
 
 == Lifecycle ==
 
