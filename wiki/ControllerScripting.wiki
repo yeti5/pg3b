@@ -52,7 +52,7 @@ The framework exposes some variables to scripts:
   * `action` is the action that executed the script.
   * `trigger` is the trigger that caused the action to be executed.
   * `config` is the active config.
-  * `device` is the connected PG3B or XIM360, or null.
+  * `device` is the connected PG3B or XIM, or null.
   * `controller` is the connected Xbox controller, or null.
   * `ui` is the UI instance that provides access to the application's UI.
 
