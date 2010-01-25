@@ -5,11 +5,11 @@ http://pg3b.googlecode.com/svn/wiki/controller/controller.jpg
 
 = Controller =
 
-Controller is a desktop software application. It can monitor input devices such as a keyboard, mouse, or joystick and manipulate the PG3B or XIM accordingly. This allows nearly any PC peripheral to be used with an Xbox 360. It also has built-in support for scripting
+Controller is a desktop software application. It can monitor input devices such as a keyboard, mouse, or joystick and manipulate the PG3B, XIM1, or XIM2 (aka XIM360) accordingly. This allows nearly any PC peripheral to be used with an Xbox 360. It also has built-in support for scripting
 
 === Supported Devices ===
 
-Controller supports both the PG3B and [http://xim360.com XIM360] hardware. The PG3B is an open source, low cost hardware solution for manipulating an Xbox 360 controller. The XIM360 is a closed source, commercial product that also manipulates an Xbox 360 controller. Because multiple devices are supported, throughout this documentation the term "device" will refer to either the PG3B or XIM360.
+Controller supports both the PG3B and [http://xim360.com XIM] hardware. The PG3B is an open source, low cost hardware solution for manipulating an Xbox 360 controller. The XIM360 is a closed source, commercial product that also manipulates an Xbox 360 controller. Because multiple devices are supported, throughout this documentation the term "device" will refer to either the PG3B, XIM1, or XIM2.
 
 == Configs ==
 
@@ -37,7 +37,7 @@ On the new trigger screen, you may choose what type of action to take in respons
 
 === Device Action ===
 
-A device action tells the PG3B or XIM 360 to manipulate the Xbox 360 controller. Eg, if your trigger is a keyboard key and you have chosen a device action set to the A button, then when you press the keyboard key, the A button will be pressed. When you release your key, the A button will be released.
+A device action tells the PG3B or XIM to manipulate the Xbox 360 controller. Eg, if your trigger is a keyboard key and you have chosen a device action set to the A button, then when you press the keyboard key, the A button will be pressed. When you release your key, the A button will be released.
 
 _Tip: To easily set the target for a device action, click a button on the controller image at the top of the application. You can also drag the sticks to set the target to an axis._
 
@@ -51,7 +51,7 @@ This type of action changes the mouse translation settings. Eg, if the input is 
 
 == Mouse Translation ==
 
-On the 'Configuration' tab, under the triggers table, you will find the `Mouse` button. This button opens a dialog and allows you to customize how the mouse movement will be translated into a thumbstick deflection. Currently, only the XIM360 mouse translation algorithms are supported. See [http://xim360.com/community/index.php?topic=1069.0 this page], about halfway down, for more information on the individual settings.
+On the 'Configuration' tab, under the triggers table, you will find the `Mouse` button. This button opens a dialog and allows you to customize how the mouse movement will be translated into a thumbstick deflection. Currently, only the XIM mouse translation algorithms are supported. See [http://xim360.com/community/index.php?topic=1069.0 this page], about halfway down, for more information on the individual settings. If the XIM1 software is installed, the XIM1 mouse translation can be used. If the XIM1 software is installed, the XIM2 mouse translation can be used. This is true even if the connected device is a PG3B.
 
 == Deadzones ==
 
