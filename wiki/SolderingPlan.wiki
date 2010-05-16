@@ -25,4 +25,18 @@ Notice that the solder joints are shiny and conical. This is how your solder joi
 
 [http://pg3b.googlecode.com/svn/wiki/Prototype2Top.jpg]
 
+Once the mainboard is finished, it's time to solder the Teensy onto the other side.  
+The pins are labeled for you.  Gently insert the Teensy++ MCU, and solder the legs up.  
+
+Now all that's left is the connection from the output control pins on the mainboard to
+the corresponding points on the Controller PCB.  You will need a good reference of
+your controller PCB, here are two links:
+
+http://forums.xbox-scene.com/index.php?showtopic=471958    
+(scroll down to Controller Modifications and look at the High Res images provided by RDC)
+
+http://www.slagcoin.com/joystick/pcb_wiring.html#PCB_DIAGRAMS
+
+
+
 In Progress ....
